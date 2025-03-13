@@ -43,8 +43,8 @@ const scrollToTop = () => {
     <nav class="hidden lg:flex items-center gap-4 text-(--color-Noir)"  @click="scrollToTop">
       <router-link
         to="/stage-europe"
-        class="font-semibold relative"
-        :class="{ 'underline decoration-2': isActive('/stage-europe') }"
+        class="relative hover:font-bold transition-all duration-300"
+        :class="{ 'font-bold': isActive('/stage-europe') }"
       >
         Stage en Europe
       </router-link>
@@ -52,8 +52,8 @@ const scrollToTop = () => {
 
       <router-link
         to="/alternance-internationale"
-        class="font-semibold relative"
-        :class="{ 'underline decoration-2': isActive('/alternance-internationale') }"
+        class="relative hover:font-bold transition-all duration-300"
+        :class="{ 'font-bold': isActive('/alternance-internationale') }"
       >
         Alternance internationale
       </router-link>
@@ -61,8 +61,8 @@ const scrollToTop = () => {
 
       <router-link
         to="/sorties-culturelles"
-        class="font-semibold relative"
-        :class="{ 'underline decoration-2': isActive('/sorties-culturelles') }"
+        class=" relative hover:font-bold transition-all duration-300"
+        :class="{ 'font-bold': isActive('/sorties-culturelles') }"
       >
         Sorties culturelles
       </router-link>
