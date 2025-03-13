@@ -23,8 +23,8 @@ const resetGrid = () => {
 </script>
 <template>
   <div class="h-40 bg-gradient-to-b from-(--color-Blanc) to-(--color-Bleueurope)"></div>
-  <footer class="relative overflow-hidden">
-    <div class="bg-(--color-Bleueurope)">
+  <footer>
+    <div class="bg-(--color-Bleueurope) relative overflow-hidden">
       <img
         class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 md:rotate-0 w-auto max-w-none h-[70vh] xl:h-[110vh]"
         src="/img/bgfooter.webp"
@@ -43,6 +43,7 @@ const resetGrid = () => {
             interrogations les plus fréquentes des étudiants du MMi.
           </p>
         </div>
+
         <section class="grid grid-cols-2 md:grid-cols-3 gap-3.5 xl:gap-10 mt-10 pb-32 xl:pb-56">
           <div
             v-for="(card, index) in [
@@ -100,10 +101,10 @@ const resetGrid = () => {
               {{ card.text }}
             </p>
 
-            <!-- Bouton Voir plus / Fermer, centré même si le texte est à gauche -->
+            <!-- Bouton Voir plus / Fermer -->
             <button
-              class="text-[12px] font-semibold font-poppins lg:text-[16px] flex items-center gap-3 p-1 px-6 rounded-lg self-center"
-              :class="`bg-(${card.color}) ${activeCard === index ? 'mt-14' : ''}`"
+              class="text-[12px] font-semibold font-poppins lg:text-[16px] flex items-center gap-3 p-1 px-6 rounded-lg self-center cursor-pointer"
+              :style="{ backgroundColor: `var(${card.color})` }"
               @click="activeCard === index ? resetGrid() : expandCard(index)"
             >
               {{ activeCard === index ? 'Fermer' : 'Voir plus' }}
