@@ -1,1 +1,18 @@
-@import "tailwindcss"
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-Rouge : #EE4035;
+  --color-Bleu : #002C40;
+  --color-Bleueurope : #003399;
+  --color-Turquoise : #4DB3B4;
+  --color-Acier : #506B78;
+  --color-Jaune : #F4BB46;
+  --color-Noir : #000000;
+  --color-Gris : #7A7A7A;
+  --color-Blanc : #FFFFFF;
+}
