@@ -85,7 +85,7 @@ const closeMenu = (path: string) => {
   <!-- Menu Mobile (s'affiche sous le header) -->
   <div
     v-if="isMenuOpen"
-    class="lg:hidden w-11/12 md:w-10/12 mx-auto bg-(--color-Jaune) rounded-b-xl flex flex-col items-center gap-4 py-4 text-(--color-Noir) text-lg fixed top-[11vh] left-1/2 -translate-x-1/2 z-50"
+    class="lg:hidden w-11/12 md:w-10/12 mx-auto bg-(--color-Jaune) rounded-b-xl flex flex-col items-center gap-4 py-4 text-(--color-Noir) text-lg fixed top-[12vh] left-1/2 -translate-x-1/2 z-50"
   >
     <button @click="closeMenu('/stage-europe')" class="font-semibold">Stage en Europe</button>
     <div class="w-2 h-2 bg-(--color-Bleueurope) rounded-full"></div>
