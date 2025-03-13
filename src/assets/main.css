@@ -1,18 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-roboto: "Roboto", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 
-  --color-Rouge : #EE4035;
-  --color-Bleu : #002C40;
-  --color-Bleueurope : #003399;
-  --color-Turquoise : #4DB3B4;
-  --color-Acier : #506B78;
-  --color-Jaune : #F4BB46;
-  --color-Noir : #000000;
-  --color-Gris : #7A7A7A;
-  --color-Blanc : #FFFFFF;
+  --color-Rouge: #ee4035;
+  --color-Bleu: #002c40;
+  --color-Bleueurope: #003399;
+  --color-Turquoise: #4db3b4;
+  --color-Acier: #506b78;
+  --color-Jaune: #f4bb46;
+  --color-Noir: #000000;
+  --color-Gris: #7a7a7a;
+  --color-Blanc: #ffffff;
+}
+
+h1,
+h2 {
+  font-family: var(--font-roboto);
+  font-size: 55px; /* Taille par défaut (mobile) */
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-poppins);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: var(--font-poppins);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h6 {
+  font-family: var(--font-poppins);
+  font-size: 11px;
+}
+
+p {
+  font-weight: 300;
+}
+
+/* Taille spécifique pour desktop */
+@media (min-width: 768px) {
+
+  h4{
+    font-size: 24px;
+  }
+
+  h5{
+    font-size: 18px;
+  }
+
+
+}
+
+
+
+
+/* Taille spécifique pour desktop */
+@media (min-width: 1280px) {
+  /* 1024px correspond à un écran desktop standard */
+  h1,
+  h2 {
+    font-size: 260px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  h5{
+    font-size: 22px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
 }

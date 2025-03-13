@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <h1>oui </h1>
+  <h1>PPP</h1>
 </template>
