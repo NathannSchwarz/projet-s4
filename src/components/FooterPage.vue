@@ -141,18 +141,18 @@ const resetGrid = () => {
         <div class="space-y-3 col-span-2">
           <h5>MENU</h5>
           <ul class="space-y-3 font-roboto font-light text-sm">
-            <li>Stages en Europe</li>
-            <li>Alternances Internationale</li>
-            <li>Sorties Culturelles</li>
+            <li><router-link to="#">Stages en Europe</router-link></li>
+            <li><router-link to="#">Alternances Internationale</router-link></li>
+            <li><router-link to="#">Sorties Culturelles</router-link></li>
           </ul>
         </div>
 
         <div class="space-y-3 col-span-2 md:col-span-4 lg:col-span-3">
           <h5>INFORMATIONS LÉGALES</h5>
           <ul class="space-y-3 font-roboto font-light text-sm">
-            <li>Accès à nos sites formation</li>
-            <li>Mentions légales</li>
-            <li>Politiques de cookies (EU)</li>
+            <li><a href="#" target="_blank">Accès à nos sites formation</a></li>
+            <li><router-link to="#">Mentions légales</router-link></li>
+            <li><router-link to="#">Politiques de cookies (EU)</router-link></li>
           </ul>
         </div>
 
@@ -160,11 +160,31 @@ const resetGrid = () => {
         <div class="space-y-3 col-span-4 md:col-span-2 lg:col-span-3">
           <h5>RÉSEAUX SOCIAUX</h5>
           <ul class="flex space-x-3">
-            <li><img class="h-7 lg:h-8" src="/img/social/instagram.png" alt="" /></li>
-            <li><img class="h-7 lg:h-8" src="/img/social/facebook.png" alt="" /></li>
-            <li><img class="h-7 lg:h-8" src="/img/social/ytb.png" alt="" /></li>
-            <li><img class="h-7 lg:h-8" src="/img/social/linkedin.png" alt="" /></li>
-            <li><img class="h-7 lg:h-8" src="/img/social/tiktok.png" alt="" /></li>
+            <li>
+              <a href="#" target="_blank"
+                ><img class="h-7 lg:h-8" src="/img/social/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img class="h-7 lg:h-8" src="/img/social/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img class="h-7 lg:h-8" src="/img/social/ytb.png" alt="YouTube"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img class="h-7 lg:h-8" src="/img/social/linkedin.png" alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img class="h-7 lg:h-8" src="/img/social/tiktok.png" alt="TikTok"
+              /></a>
+            </li>
           </ul>
         </div>
       </section>
