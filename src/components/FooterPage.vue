@@ -14,6 +14,12 @@ const activeCard = ref<number | null>(null)
 // Fonction pour activer une carte
 const expandCard = (index: number) => {
   activeCard.value = index
+
+  // Vérifier si l'élément existe avant d'appliquer le scroll
+  const section = document.getElementById('faq-section')
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 }
 
 // Fonction pour réinitialiser (fermer la carte)
@@ -26,11 +32,11 @@ const resetGrid = () => {
   <footer>
     <div class="bg-(--color-Bleueurope) relative overflow-hidden">
       <img
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 md:rotate-0 w-auto max-w-none h-[70vh] xl:h-[110vh]"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 md:rotate-0 w-auto max-w-none h-[85vh] xl:h-[110vh]"
         src="/img/bgfooter.webp"
         alt="bgfooter"
       />
-      <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
+      <section id="faq-section" class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
         <div class="pt-32 xl:pt-56">
           <h4 class="text-(--color-Blanc) mb-3">
             FAQ – Tout savoir sur votre mobilité internationale
