@@ -28,8 +28,8 @@ const resetGrid = () => {
 }
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 <template>
   <div class="h-40 bg-gradient-to-b from-(--color-Blanc) to-(--color-Bleueurope)"></div>
@@ -54,7 +54,8 @@ const scrollToTop = () => {
           </p>
         </div>
 
-        <section class="grid grid-cols-2 md:grid-cols-3 gap-3.5 xl:gap-10 mt-10 lg:mt-20 pb-32 xl:pb-56">
+        <section
+          class="grid grid-cols-2 md:grid-cols-3 gap-3.5 xl:gap-10 mt-10 lg:mt-20 pb-32 xl:pb-56">
           <div
             v-for="(card, index) in [
               {
@@ -151,19 +152,33 @@ const scrollToTop = () => {
 
         <div class="space-y-3 col-span-2">
           <h5>MENU</h5>
-          <ul class="space-y-2  font-roboto font-light text-sm " @click="scrollToTop">
-            <li class="hover:font-semibold transition-all duration-300"><router-link  to="stage-europe " >Stages en Europe</router-link></li>
-            <li class="hover:font-semibold transition-all duration-300"><router-link to="alternance-internationale">Alternances Internationale</router-link></li>
-            <li class="hover:font-semibold transition-all duration-300"><router-link to="sorties-culturelles">Sorties Culturelles</router-link></li>
+          <ul class="space-y-2 font-roboto font-light text-sm" @click="scrollToTop">
+            <li class="hover:font-semibold transition-all duration-300">
+              <router-link to="stage-europe ">Stages en Europe</router-link>
+            </li>
+            <li class="hover:font-semibold transition-all duration-300">
+              <router-link to="alternance-internationale">Alternances Internationale</router-link>
+            </li>
+            <li class="hover:font-semibold transition-all duration-300">
+              <router-link to="sorties-culturelles">Sorties Culturelles</router-link>
+            </li>
           </ul>
         </div>
 
         <div class="space-y-3 col-span-2 md:col-span-4 lg:col-span-3" @click="scrollToTop">
           <h5>INFORMATIONS LÉGALES</h5>
           <ul class="space-y-2 font-roboto font-light text-sm">
-            <li class="hover:font-semibold transition-all duration-300"><a href="https://www.iut-nfc.univ-fcomte.fr/plans/" target="_blank">Accès à nos sites formation</a></li>
-            <li class="hover:font-semibold transition-all duration-300"><router-link to="#">Mentions légales</router-link></li>
-            <li class="hover:font-semibold transition-all duration-300"><router-link to="#">Politiques de cookies (EU)</router-link></li>
+            <li class="hover:font-semibold transition-all duration-300">
+              <a href="https://www.iut-nfc.univ-fcomte.fr/plans/" target="_blank"
+                >Accès à nos sites formation</a
+              >
+            </li>
+            <li class="hover:font-semibold transition-all duration-300">
+              <router-link to="#">Mentions légales</router-link>
+            </li>
+            <li class="hover:font-semibold transition-all duration-300">
+              <router-link to="#">Politiques de cookies (EU)</router-link>
+            </li>
           </ul>
         </div>
 

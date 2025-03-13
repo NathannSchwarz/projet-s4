@@ -91,10 +91,10 @@ const scrollToTop = () => {
     v-if="isMenuOpen" @click="scrollToTop"
     class="lg:hidden w-11/12 md:w-10/12 mx-auto bg-(--color-Jaune) rounded-b-xl flex flex-col items-center gap-4 py-4 text-(--color-Noir) text-lg fixed top-[83px] left-1/2 -translate-x-1/2 z-50 font-roboto"
   >
-    <button @click="closeMenu('/stage-europe')" class="font-semibold">Stage en Europe</button>
+    <button @click="closeMenu('/stage-europe')" :class="{ 'font-bold': isActive('/stage-europe') }">Stage en Europe</button>
     <div class="w-2 h-2 bg-(--color-Bleueurope) rounded-full"></div>
-    <button @click="closeMenu('/alternance-internationale')" class="font-semibold">Alternance internationale</button>
+    <button @click="closeMenu('/alternance-internationale') " :class="{ 'font-bold': isActive('/alternance-internationale') }" >Alternance internationale</button>
     <div class="w-2 h-2 bg-(--color-Bleueurope) rounded-full"></div>
-    <button @click="closeMenu('/sorties-culturelles')" class="font-semibold">Sorties culturelles</button>
+    <button @click="closeMenu('/sorties-culturelles')"  :class="{ 'font-bold': isActive('/sorties-culturelles') }">Sorties culturelles</button>
   </div>
 </template>
