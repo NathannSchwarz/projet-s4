@@ -4,7 +4,7 @@
   <section class="relative overflow-hidden py-30 xl:py-32 flex flex-col items-center mx-auto">
     <!-- Image en arrière-plan -->
     <img
-      class="absolute h-[75vh] md:h-[85vh] lg:h-[70vh] xl:h-[85vh] xl:w-1/3  object-cover z-0"
+      class="absolute h-[75vh] md:h-[85vh] lg:h-[70vh] xl:h-[85vh] xl:w-1/3 object-cover z-0"
       src="/img/Stars.webp"
       alt=""
     />
@@ -19,7 +19,7 @@
       class="relative h-[60vh] overflow-hidden z-20 w-11/12 md:w-9/12 lg:w-5/12 md:-mt-6 xl:-mt-14 lg:h-[45vh]"
     >
       <video
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl"
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl pointer-events-none"
         src="/video/IUT.mp4"
         autoplay
         loop
