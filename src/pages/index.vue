@@ -20,7 +20,7 @@
     >
       <video
         class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl"
-        src="/video/IUT NFC Licence professionnelle Dosimétrie et radioprotection médicales (DORA) - IUT Nord Franche-Comté (1080p, h264).mp4"
+        src="/video/IUT.mp4"
         autoplay
         loop
         muted
