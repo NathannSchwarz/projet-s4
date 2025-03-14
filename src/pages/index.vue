@@ -1,10 +1,7 @@
 <script setup lang="ts">
-
 import VideoPlayer from '@/components/VideoPlayer.vue'
 import Carroussel from '@/components/Carroussel.vue'
 import DataIntro from '@/components/DataIntro.vue'
-
-
 </script>
 
 <template>
@@ -43,26 +40,25 @@ import DataIntro from '@/components/DataIntro.vue'
     </h2>
   </section>
 
-  <DataIntro/>
+  <DataIntro />
 
+  <div class=" w-11/12 md:w-9/12 xl:w-7/12 mx-auto mt-44">
+    <h4 class="text-(--color-Rouge) mb-4">L'Europe : un terrain de jeu professionnel</h4>
+    <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+      Chaque année, des étudiants en MMI partent en stage, alternance et profitent des différents
+      voyages organisés dans divers pays d'Europe. C'est ainsi l'occasion d'enrichir son parcours
+      académique et sa culture, tout en découvrant les différents pays d'Europe ! <br /><br />
+      Les expériences concrètes et enrichissantes au sein d'entreprises sont une véritable
+      opportunité qui sera importante pour la carrière de nos étudiants. Le tout est encadré par les
+      enseignants référents de l'Université, qui n'hésiteront pas à vous aidez concernant les
+      démarches et demandes de bourses.
+    </p>
+  </div>
+
+  <Carroussel />
 
 
   <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
-    <div class="mb-44">
-      <h4 class="text-(--color-Rouge) mb-4">L'Europe : un terrain de jeu professionnel</h4>
-      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        Chaque année, des étudiants en MMI partent en stage, alternance et profitent des différents
-        voyages organisés dans divers pays d'Europe. C'est ainsi l'occasion d'enrichir son parcours
-        académique et sa culture, tout en découvrant les différents pays d'Europe ! <br /><br />
-        Les expériences concrètes et enrichissantes au sein d'entreprises sont une véritable
-        opportunité qui sera importante pour la carrière de nos étudiants. Le tout est encadré par
-        les enseignants référents de l'Université, qui n'hésiteront pas à vous aidez concernant les
-        démarches et demandes de bourses.
-      </p>
-    </div>
-
-      <Carroussel/>
-
     <div class="mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Ils l’ont fait, pourquoi pas vous ?</h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
