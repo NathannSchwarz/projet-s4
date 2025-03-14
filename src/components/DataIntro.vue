@@ -104,24 +104,24 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import CarteIcon from '@/components/icons/CarteIcon.vue'
+import { ref, onMounted } from 'vue';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import CarteIcon from '@/components/icons/CarteIcon.vue';
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
-const counter1 = ref<HTMLElement | null>(null)
-const counter2 = ref<HTMLElement | null>(null)
-const counter3 = ref<HTMLElement | null>(null)
-const counter4 = ref<HTMLElement | null>(null)
-const counter5 = ref<HTMLElement | null>(null)
-const counter6 = ref<HTMLElement | null>(null)
+const counter1 = ref<HTMLElement | null>(null);
+const counter2 = ref<HTMLElement | null>(null);
+const counter3 = ref<HTMLElement | null>(null);
+const counter4 = ref<HTMLElement | null>(null);
+const counter5 = ref<HTMLElement | null>(null);
+const counter6 = ref<HTMLElement | null>(null);
 
 onMounted(() => {
-  const counters = [counter1, counter2, counter3, counter4, counter5, counter6]
+  const counters = [counter1, counter2, counter3, counter4, counter5, counter6];
   counters.forEach((counterRef, index) => {
-    const counter = counterRef.value
+    const counter = counterRef.value;
     if (counter) {
       gsap.fromTo(
         counter,
@@ -133,30 +133,32 @@ onMounted(() => {
             trigger: counter,
             start: 'top 80%',
             toggleActions: 'play none none reverse',
+            once: true, // Assure que l'animation ne se déclenche qu'une seule fois
           },
           ease: 'power1.inOut',
           onUpdate: () => {
-            counter.innerText = Math.ceil(gsap.getProperty(counter, 'innerText')).toString()
+            counter.innerText = Math.ceil(gsap.getProperty(counter, 'innerText')).toString();
           },
-        },
-      )
+        }
+      );
     }
-  })
-})
+  });
+});
 
 const getTargetValue = (index: number): number => {
   switch (index) {
     case 0:
     case 3:
     case 5:
-      return 53000
+      return 53000;
     case 1:
     case 2:
-      return 378
+      return 378;
     case 4:
-      return 16
+      return 16;
     default:
-      return 0
+      return 0;
   }
-}
+};
+
 </script>
