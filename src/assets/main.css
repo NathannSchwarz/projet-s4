@@ -53,27 +53,26 @@ p {
 
 /* Taille spécifique pour desktop */
 @media (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 100px; /* Taille par défaut (mobile) */
+  }
 
-  h4{
+  h4 {
     font-size: 24px;
   }
 
-  h5{
+  h5 {
     font-size: 18px;
   }
-
-
 }
-
-
-
 
 /* Taille spécifique pour desktop */
 @media (min-width: 1280px) {
   /* 1024px correspond à un écran desktop standard */
   h1,
   h2 {
-    font-size: 260px;
+    font-size: 240px;
   }
 
   h3 {
@@ -84,7 +83,7 @@ p {
     font-size: 28px;
   }
 
-  h5{
+  h5 {
     font-size: 22px;
   }
 
