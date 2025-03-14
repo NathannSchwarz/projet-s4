@@ -19,7 +19,7 @@
       class="relative h-[60vh] overflow-hidden z-20 w-11/12 md:w-9/12 lg:w-5/12 md:-mt-6 xl:-mt-14 lg:h-[45vh]"
     >
       <video
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl pointer-events-none"
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl nonevideo"
         src="/video/IUT.mp4"
         autoplay
         loop
@@ -43,5 +43,14 @@
     -1px -1px 0 black,
     1px -1px 0 black,
     -1px 1px 0 black;
+}
+
+.nonevideo {
+  pointer-events: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 </style>
