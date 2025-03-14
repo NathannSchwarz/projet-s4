@@ -1,5 +1,5 @@
 <template>
-  <section class="relative overflow-hidden py-44 my-4 lg:my-20">
+  <section class="relative overflow-hidden py-20 my-4 lg:my-20">
     <!-- Image de fond centrée et recadrée -->
     <div
       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200vw] h-[200vh] md:w-full md:h-full"
@@ -14,7 +14,7 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-5 md:px-28 lg:p-10 col-span-12 lg:col-span-6 lg:rounded-3xl"
         >
-          <h3>53000</h3>
+          <h3 ref="counter1">0</h3>
           <h6>
             étudiants et personnels français en mobilité Erasmus+ sont partis étudier dans les pays
             d’Europe en 2022
@@ -32,7 +32,7 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-3 md:px-10 lg:p-10 lg:px-6 col-span-6 lg:col-span-3 lg:rounded-3xl"
         >
-          <h3>+ 378</h3>
+          <h3 ref="counter2">0</h3>
           <h6>Stages à l’étranger depuis 2014 dans l’IUT NFC</h6>
         </div>
         <div
@@ -48,7 +48,7 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-3 lg:p-10 lg:px-6 col-span-6 lg:col-span-3 lg:rounded-3xl"
         >
-          <h3>+ 378</h3>
+          <h3 ref="counter3">0</h3>
           <h6>Stages à l’étranger depuis 2014 dans l’IUT NFC</h6>
         </div>
         <div
@@ -63,7 +63,7 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-5 md:px-28 lg:p-10 col-span-12 lg:col-span-6 lg:rounded-3xl"
         >
-          <h3>53000</h3>
+          <h3 ref="counter4">0</h3>
           <h6>
             étudiants et personnels français en mobilité Erasmus+ sont partis étudiés dans les pays
             d’Europe en 2022
@@ -72,7 +72,7 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-3 md:px-10 lg:p-10 lg:px-6 col-span-6 lg:col-span-3 lg:rounded-3xl"
         >
-          <h3>+ 16%</h3>
+          <h3 ref="counter5">0</h3>
           <h6>De français en mobilité à l’étranger depuis 2016</h6>
         </div>
         <div
@@ -87,7 +87,7 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-5 md:px-28 lg:p-10 col-span-12 lg:col-span-6 lg:rounded-3xl"
         >
-          <h3>53000</h3>
+          <h3 ref="counter6">0</h3>
           <h6>
             étudiants et personnels français en mobilité Erasmus+ sont partis étudiés dans les pays
             d’Europe en 2022
@@ -103,7 +103,60 @@
   </section>
 </template>
 
-
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import CarteIcon from '@/components/icons/CarteIcon.vue'
+
+gsap.registerPlugin(ScrollTrigger)
+
+const counter1 = ref<HTMLElement | null>(null)
+const counter2 = ref<HTMLElement | null>(null)
+const counter3 = ref<HTMLElement | null>(null)
+const counter4 = ref<HTMLElement | null>(null)
+const counter5 = ref<HTMLElement | null>(null)
+const counter6 = ref<HTMLElement | null>(null)
+
+onMounted(() => {
+  const counters = [counter1, counter2, counter3, counter4, counter5, counter6]
+  counters.forEach((counterRef, index) => {
+    const counter = counterRef.value
+    if (counter) {
+      gsap.fromTo(
+        counter,
+        { innerText: 0 },
+        {
+          innerText: getTargetValue(index),
+          duration: 2,
+          scrollTrigger: {
+            trigger: counter,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse',
+          },
+          ease: 'power1.inOut',
+          onUpdate: () => {
+            counter.innerText = Math.ceil(gsap.getProperty(counter, 'innerText')).toString()
+          },
+        },
+      )
+    }
+  })
+})
+
+const getTargetValue = (index: number): number => {
+  switch (index) {
+    case 0:
+    case 3:
+    case 5:
+      return 53000
+    case 1:
+    case 2:
+      return 378
+    case 4:
+      return 16
+    default:
+      return 0
+  }
+}
 </script>

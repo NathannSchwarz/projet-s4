@@ -2,6 +2,11 @@
 import VideoPlayer from '@/components/VideoPlayer.vue'
 import Carroussel from '@/components/Carroussel.vue'
 import DataIntro from '@/components/DataIntro.vue'
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 </script>
 
 <template>
@@ -42,7 +47,7 @@ import DataIntro from '@/components/DataIntro.vue'
 
   <DataIntro />
 
-  <div class=" w-11/12 md:w-9/12 xl:w-7/12 mx-auto mt-44">
+  <div class=" w-11/12 md:w-9/12 xl:w-7/12 mt-20 mx-auto lg:mt-44">
     <h4 class="text-(--color-Rouge) mb-4">L'Europe : un terrain de jeu professionnel</h4>
     <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
       Chaque année, des étudiants en MMI partent en stage, alternance et profitent des différents
@@ -89,7 +94,7 @@ import DataIntro from '@/components/DataIntro.vue'
         <button
           class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
         >
-          <RouterLink to="/">Découvrez d’autres expériences !</RouterLink>
+          <RouterLink to="/stage-europe" @click="scrollToTop">Découvrez d’autres expériences !</RouterLink>
         </button>
       </div>
 
@@ -116,7 +121,7 @@ import DataIntro from '@/components/DataIntro.vue'
         <button
           class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
         >
-          <RouterLink to="/">Découvrez d’autres expériences !</RouterLink>
+          <RouterLink to="/stage-europe" @click="scrollToTop">Découvrez d’autres expériences !</RouterLink>
         </button>
       </div>
 
@@ -143,7 +148,7 @@ import DataIntro from '@/components/DataIntro.vue'
         <button
           class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
         >
-          <RouterLink to="/">Découvrez d’autres expériences !</RouterLink>
+          <RouterLink to="/sorties-culturelles" @click="scrollToTop">Découvrez d’autres expériences !</RouterLink>
         </button>
       </div>
 
