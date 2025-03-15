@@ -2,9 +2,8 @@
 import VideoPlayer from '@/components/VideoPlayer.vue'
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -45,16 +44,73 @@ const scrollToTop = () => {
 
   <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
     <div class="mb-20">
-      <h4 class="text-(--color-Rouge) mb-4">Ils l’ont fait, pourquoi pas vous ?</h4>
+      <h4 class="text-(--color-Rouge) mb-4">L’Alternance en Europe – Une opportunité en devenir</h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        Partir à l’étranger, c’est bien plus qu’une simple expérience académique : c’est une
-        aventure humaine et professionnelle qui transforme une carrière. Que ce soit en stage, en
-        échange universitaire ou en alternance, nos anciens étudiants ont franchi le pas et
-        partagent ici leur parcours. <br /><br />
-        Découvrez à travers leurs témoignages leurs défis, leurs réussites, leurs anecdotes, et
-        surtout, l’impact qu’a eu cette expérience sur leur avenir. De Berlin à Madrid, en passant
-        par Amsterdam et Barcelone, chaque destination offre son lot de découvertes et
-        d’opportunités.
+        L’alternance est une expérience formatrice qui permet de combiner études et immersion en
+        entreprise. Aujourd’hui, les étudiants du MMi peuvent réaliser leur alternance en France,
+        mais une nouvelle opportunité se dessine : l’alternance en Europe.
+      </p>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        L’IUT explore actuellement la possibilité de développer des partenariats avec des
+        entreprises européennes afin de permettre aux étudiants de réaliser leur alternance à
+        l’international, tout en poursuivant leur formation en France.
+      </p>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        Pourquoi envisager une alternance en Europe ?
+      </p>
+    </div>
+
+    <div class="mb-20">
+      <h4 class="text-(--color-Rouge) mb-4">Où en est le projet ?</h4>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        L’alternance à l’étranger est encore en phase de réflexion au sein du département MMi. L’IUT
+        travaille actuellement à établir des contacts avec des entreprises et institutions en
+        Europe, dans des secteurs comme :
+      </p>
+      <ul class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        <li>Le design et l’UX/UI → Studios créatifs en Allemagne, aux Pays-Bas ou en Suède.</li>
+        <li>Le développement web et numérique → Startups tech à Barcelone, Berlin ou Amsterdam.</li>
+        <li>La communication et le marketing digital → Agences à Madrid, Bruxelles ou Milan.</li>
+      </ul>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        Les enseignants du MMi encouragent déjà les étudiants à participer à des événements
+        internationaux, comme le OFFF Festival de Barcelone (voir page dédié) , afin de développer
+        leur réseau professionnel et de se préparer à une future expérience en entreprise à
+        l’étranger.
+      </p>
+    </div>
+
+    <div class="mb-20">
+      <h4 class="text-(--color-Rouge) mb-4">Comment se préparer dès maintenant ?</h4>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        Même si le programme officiel n’est pas encore lancé, il est possible d’anticiper cette
+        opportunité en :
+      </p>
+    </div>
+
+    <div class="mb-20">
+      <h4 class="text-(--color-Rouge) mb-4">Restez informé sur l’évolution du projet !</h4>
+    </div>
+  </section>
+
+  <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
+    <div class="mb-20">
+      <h4 class="text-(--color-Rouge) mb-4">
+        Stages à l’étranger : une inspiration pour les futurs alternants
+      </h4>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        Nos anciens étudiants ont vécu des stages en Europe, découvrant de nouvelles méthodes de
+        travail, développant leurs compétences et élargissant leur réseau. Leurs expériences offrent
+        un aperçu concret de ce que pourrait être l’alternance à l’international, une opportunité en
+        cours de développement au MMi.
+      </p>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        De Berlin à Barcelone, ces témoignages montrent à quel point travailler à l’étranger est un
+        atout. L’alternance en Europe suivra cette dynamique, combinant études et immersion
+        professionnelle.
+      </p>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        Découvrez leurs parcours et projetez-vous dans votre futur à l’international !
       </p>
     </div>
 
@@ -74,7 +130,9 @@ const scrollToTop = () => {
         <button
           class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
         >
-          <RouterLink to="/stage-europe" @click="scrollToTop">Découvrez d’autres expériences !</RouterLink>
+          <RouterLink to="/stage-europe" @click="scrollToTop"
+            >Découvrez d’autres expériences !</RouterLink
+          >
         </button>
       </div>
 
@@ -101,7 +159,9 @@ const scrollToTop = () => {
         <button
           class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
         >
-          <RouterLink to="/stage-europe" @click="scrollToTop">Découvrez d’autres expériences !</RouterLink>
+          <RouterLink to="/stage-europe" @click="scrollToTop"
+            >Découvrez d’autres expériences !</RouterLink
+          >
         </button>
       </div>
 
@@ -111,7 +171,6 @@ const scrollToTop = () => {
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px]"
       />
     </div>
-
   </section>
 </template>
 
