@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import VideoPlayer from '@/components/VideoPlayer.vue'
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+</script>
+
 <template>
   <section class="relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
     <!-- Image en arrière-plan -->
@@ -32,6 +41,77 @@
     >
       EN EUROPE
     </h2>
+  </section>
+
+  <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
+    <div class="mb-20">
+      <h4 class="text-(--color-Rouge) mb-4">Ils l’ont fait, pourquoi pas vous ?</h4>
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+        Partir à l’étranger, c’est bien plus qu’une simple expérience académique : c’est une
+        aventure humaine et professionnelle qui transforme une carrière. Que ce soit en stage, en
+        échange universitaire ou en alternance, nos anciens étudiants ont franchi le pas et
+        partagent ici leur parcours. <br /><br />
+        Découvrez à travers leurs témoignages leurs défis, leurs réussites, leurs anecdotes, et
+        surtout, l’impact qu’a eu cette expérience sur leur avenir. De Berlin à Madrid, en passant
+        par Amsterdam et Barcelone, chaque destination offre son lot de découvertes et
+        d’opportunités.
+      </p>
+    </div>
+
+    <div
+      class="p-5 py-7 lg:p-10 lg:py-7 bg-gradient-to-b from-[var(--color-Rouge)] to-[var(--color-Blanc)] lg:bg-gradient-to-r lg:from-[var(--color-Rouge)] lg:to-[var(--color-Blanc)] text-(--color-Blanc) grid grid-cols-1 lg:grid-cols-9 gap-5 lg:gap-8 lg:items-center lg:justify-center inset-shadow-md rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px] mb-20 lg:mb-40"
+    >
+      <!-- Conteneur des textes -->
+      <div class="space-y-3 lg:col-span-3">
+        <h4 class="lg:mb-8">Stage en UX/UI design à Berlin</h4>
+        <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
+          Léa LEBEZIER
+        </p>
+        <p class="text-[13px] md:text-[14px] xl:text-[16px] font-poppins">
+          "J’ai toujours voulu travailler dans un environnement international, et mon stage à Berlin
+          a été une révélation !"
+        </p>
+        <button
+          class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
+        >
+          <RouterLink to="/stage-europe" @click="scrollToTop">Découvrez d’autres expériences !</RouterLink>
+        </button>
+      </div>
+
+      <!-- Vidéo avec box shadow -->
+      <VideoPlayer
+        videoSrc="/video/IUT.mp4"
+        videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
+      />
+    </div>
+
+    <div
+      class="p-5 py-7 lg:p-10 lg:py-7 bg-gradient-to-b from-[var(--color-Jaune)] to-[var(--color-Blanc)] lg:bg-gradient-to-r lg:from-[var(--color-Blanc)] lg:to-[var(--color-Jaune)] text-(--color-Blanc) grid grid-cols-1 lg:grid-cols-9 gap-5 lg:gap-6 lg:items-center lg:justify-center inset-shadow-md rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px] my-20 lg:my-40"
+    >
+      <!-- Conteneur des textes -->
+      <div class="space-y-3 lg:col-span-3 lg:order-2">
+        <h4 class="lg:mb-8">Stage en webdesign à Madrid</h4>
+        <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
+          Maxime ILUTISUQ
+        </p>
+        <p class="text-[13px] md:text-[14px] xl:text-[16px] font-poppins">
+          "Travailler en alternance dans une agence de communication à Madrid, c’était l’opportunité
+          parfaite pour allier études et expérience internationale !"
+        </p>
+        <button
+          class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
+        >
+          <RouterLink to="/stage-europe" @click="scrollToTop">Découvrez d’autres expériences !</RouterLink>
+        </button>
+      </div>
+
+      <!-- Vidéo avec box shadow -->
+      <VideoPlayer
+        videoSrc="/video/IUT.mp4"
+        videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px]"
+      />
+    </div>
+
   </section>
 </template>
 

@@ -1,3 +1,12 @@
+<script setup lang="ts">
+
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+</script>
+
 <template>
   <section class="relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
     <!-- Image en arrière-plan -->
