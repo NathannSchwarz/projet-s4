@@ -20,7 +20,7 @@ const slides = ref([
     description: `Les stages sont une étape cruciale de la formation, et travailler au sein d'entreprises internationales leur permet de pleinement mettre en pratique le savoir appris en classe tout en découvrant un nouveau pays. Découvrez les témoignages d'étudiants et autres informations capitales ici.`,
     Bouton: 'Découvrez les stages',
     subtitle: 'STAGE À L’ÉTRANGER',
-    link: '/Stage',
+    link: '/StagePage',
     leftOffset: { default: '-191px', md: '-215px', lg: '-260px', xl: '-260px' },
   },
   {
@@ -29,7 +29,7 @@ const slides = ref([
     description: `Très bientôt, la possibilité de faire de l'alternance dans des entreprises européennes sera envisageable ! Vous pourrez ainsi allier la théorie et la pratique en plus de vous immergez à l'international, vous permettant de pleinement découvrir comment une entreprise fonctionne.`,
     Bouton: 'Découvrez l’alternance',
     subtitle: 'ALTERNANCE EUROPE',
-    link: '/alternance-internationale',
+    link: '/AlternancePage',
     leftOffset: { default: '-200px', md: '-220px', lg: '-260px', xl: '-273px' },
   },
   {
@@ -38,7 +38,7 @@ const slides = ref([
     description: `En plus des habituels aspects académiques du BUT, MMi offre la chance aux étudiants de pouvoir partir en sortie pédagogique dans divers pays d'Europe ! Le festival OFFF à Barcelone, le Vitra Design Museum à Weil-am-Rhein, ou encore un futur semestre d'échange en Catalogne sont au programme afin d'offrir une nouvelle manière d'apprendre et de forger sa culture et sa carrière.`,
     Bouton: 'Découvrez les sorties',
     subtitle: 'SORTIES CULTURELLES',
-    link: '/sorties-culturelles',
+    link: '/SortiesPage',
     leftOffset: { default: '-210px', md: '-233px', lg: '-191px', xl: '-287px' },
   },
 ])
