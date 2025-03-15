@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import VideoPlayer from '@/components/VideoPlayer.vue'
-import Carroussel from '@/components/Carroussel.vue'
+import Carroussel from '@/components/CarrousselPage.vue'
 import DataIntro from '@/components/DataIntro.vue'
+
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -10,7 +11,7 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <section class="relative overflow-hidden py-30 xl:py-32 flex flex-col items-center mx-auto">
+  <section class="relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
     <!-- Image en arrière-plan -->
     <img
       class="absolute h-[75vh] md:h-[85vh] lg:h-[70vh] xl:h-[85vh] xl:w-1/3 object-cover z-0"
@@ -43,6 +44,7 @@ const scrollToTop = () => {
     >
       L'EUROPE
     </h2>
+
   </section>
 
   <DataIntro />

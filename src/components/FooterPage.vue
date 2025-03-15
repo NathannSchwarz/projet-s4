@@ -154,13 +154,13 @@ const scrollToTop = () => {
           <h5>MENU</h5>
           <ul class="space-y-2 font-roboto font-light text-sm" @click="scrollToTop">
             <li class="hover:font-semibold transition-all duration-300">
-              <router-link to="stage-europe">Stages en Europe</router-link>
+              <router-link to="/StagePage">Stages en Europe</router-link>
             </li>
             <li class="hover:font-semibold transition-all duration-300">
-              <router-link to="alternance-internationale">Alternances Internationale</router-link>
+              <router-link to="/AlternancePage">Alternances Internationale</router-link>
             </li>
             <li class="hover:font-semibold transition-all duration-300">
-              <router-link to="sorties-culturelles">Sorties Culturelles</router-link>
+              <router-link to="/SortiesPage">Sorties Culturelles</router-link>
             </li>
           </ul>
         </div>

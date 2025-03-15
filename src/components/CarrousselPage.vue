@@ -20,7 +20,7 @@ const slides = ref([
     description: `Les stages sont une étape cruciale de la formation, et travailler au sein d'entreprises internationales leur permet de pleinement mettre en pratique le savoir appris en classe tout en découvrant un nouveau pays. Découvrez les témoignages d'étudiants et autres informations capitales ici.`,
     Bouton: 'Découvrez les stages',
     subtitle: 'STAGE À L’ÉTRANGER',
-    link: '/stage-europe',
+    link: '/Stage',
     leftOffset: { default: '-191px', md: '-215px', lg: '-260px', xl: '-260px' },
   },
   {

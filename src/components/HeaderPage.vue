@@ -42,27 +42,27 @@ const scrollToTop = () => {
     <!-- Navigation Desktop (au centre, toujours sur une ligne) -->
     <nav class="hidden lg:flex items-center gap-4 text-(--color-Noir)"  @click="scrollToTop">
       <router-link
-        to="/stage-europe"
+        to="/StagePage"
         class="relative hover:font-bold transition-all duration-300"
-        :class="{ 'font-bold': isActive('/stage-europe') }"
+        :class="{ 'font-bold': isActive('/StagePage') }"
       >
         Stage en Europe
       </router-link>
       <div class="w-2 h-2 bg-(--color-Bleueurope) rounded-full"></div>
 
       <router-link
-        to="/alternance-internationale"
+        to="/AlternancePage"
         class="relative hover:font-bold transition-all duration-300"
-        :class="{ 'font-bold': isActive('/alternance-internationale') }"
+        :class="{ 'font-bold': isActive('/AlternancePage') }"
       >
         Alternance internationale
       </router-link>
       <div class="w-2 h-2 bg-(--color-Bleueurope) rounded-full"></div>
 
       <router-link
-        to="/sorties-culturelles"
+        to="/SortiesPage"
         class=" relative hover:font-bold transition-all duration-300"
-        :class="{ 'font-bold': isActive('/sorties-culturelles') }"
+        :class="{ 'font-bold': isActive('/SortiesPage') }"
       >
         Sorties culturelles
       </router-link>
@@ -91,10 +91,10 @@ const scrollToTop = () => {
     v-if="isMenuOpen" @click="scrollToTop"
     class="lg:hidden w-11/12 md:w-10/12 mx-auto bg-(--color-Jaune) rounded-b-xl flex flex-col items-center gap-4 py-4 text-(--color-Noir) text-lg fixed top-[83px] left-1/2 -translate-x-1/2 z-50 font-roboto"
   >
-    <button @click="closeMenu('/stage-europe')" :class="{ 'font-bold': isActive('/stage-europe') }">Stage en Europe</button>
+    <button @click="closeMenu('/StagePage')" :class="{ 'font-bold': isActive('/StagePage') }">Stage en Europe</button>
     <div class="w-2 h-2 bg-(--color-Bleueurope) rounded-full"></div>
-    <button @click="closeMenu('/alternance-internationale') " :class="{ 'font-bold': isActive('/alternance-internationale') }" >Alternance internationale</button>
+    <button @click="closeMenu('/AlternancePage') " :class="{ 'font-bold': isActive('/AlternancePage') }" >Alternance internationale</button>
     <div class="w-2 h-2 bg-(--color-Bleueurope) rounded-full"></div>
-    <button @click="closeMenu('/sorties-culturelles')"  :class="{ 'font-bold': isActive('/sorties-culturelles') }">Sorties culturelles</button>
+    <button @click="closeMenu('/SortiesPage')"  :class="{ 'font-bold': isActive('/SortiesPage') }">Sorties culturelles</button>
   </div>
 </template>
