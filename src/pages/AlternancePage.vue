@@ -25,15 +25,15 @@ const submitEmail = () => {
 // Liste des éléments avec images et texte
 const items = ref([
   {
-    image: '/public/img/Alternance/Alternance1.webp',
+    image: '/img/Alternance/Alternance1.webp',
     text: 'Travaillant son CV et sa lettre de motivation en anglais.',
   },
   {
-    image: '/public/img/Alternance/Alternance2.webp',
+    image: '/img/Alternance/Alternance2.webp',
     text: 'Élargissant son réseau et participer à des événements internationaux.',
   },
   {
-    image: '/public/img/Alternance/Alternance3.webp',
+    image: '/img/Alternance/Alternance3.webp',
     text: 'S’informant sur les entreprises européennes du secteur.',
   },
 ])
