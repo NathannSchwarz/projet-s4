@@ -42,7 +42,7 @@ import VideoPlayer from '@/components/VideoPlayer.vue'
     <div class="grid grid-cols-12 gap-2 lg:gap-5 py-10 mb-16 lg:py-44 lg:-mb-10">
       <img
         class="col-span-6 rounded-xl lg:rounded-2xl"
-        src="/public/img/OFF/Off7.webp"
+        src="/public/img/OFF/OFF7.webp"
         alt="Off7"
       />
       <img
@@ -57,7 +57,7 @@ import VideoPlayer from '@/components/VideoPlayer.vue'
       />
       <img
         class="col-span-12 rounded-xl lg:rounded-2xl"
-        src="/public/img/OFF/Off6.webp"
+        src="/public/img/OFF/OFF6.webp"
         alt="Off6"
       />
     </div>
@@ -135,27 +135,27 @@ import VideoPlayer from '@/components/VideoPlayer.vue'
     <div class="grid grid-cols-12 gap-2 lg:gap-5 mb-24 lg:mb-32">
       <img
         class="rounded-xl lg:rounded-2xl col-span-6"
-        src="/public/img/OFF/Off5.webp"
+        src="/public/img/OFF/OFF5.webp"
         alt="Off5"
       />
       <img
         class="rounded-xl lg:rounded-2xl col-span-6"
-        src="/public/img/OFF/Off4.webp"
+        src="/public/img/OFF/OFF4.webp"
         alt="Off4"
       />
       <img
         class="rounded-xl lg:rounded-2xl col-span-6"
-        src="/public/img/OFF/Off1.webp"
+        src="/public/img/OFF/OFF1.webp"
         alt="Off1"
       />
       <img
         class="rounded-xl lg:rounded-2xl col-span-6 -mt-[15vw] md:-mt-[12.3vw] xl:-mt-[9.5vw]"
-        src="/public/img/OFF/Off2.webp"
+        src="/public/img/OFF/OFF2.webp"
         alt="Off2"
       />
       <img
         class="rounded-xl lg:rounded-2xl col-span-12"
-        src="/public/img/OFF/Off3.webp"
+        src="/public/img/OFF/OFF3.webp"
         alt="Off3"
       />
     </div>
