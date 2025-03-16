@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
+import VideoPlayer from '@/components/VideoPlayer.vue'
 </script>
 
 <template>
@@ -40,8 +38,17 @@ const scrollToTop = () => {
     </h2>
   </section>
 
-  <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
-    <div class="mb-20">
+  <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto ">
+    <div class="grid grid-cols-12 gap-2 lg:gap-5 py-10 mb-16 lg:py-44 lg:-mb-10 ">
+      <img class="col-span-6 rounded-xl lg:rounded-2xl" src="/public/img/off/Off7.webp" alt="Off7" />
+      <img class="col-span-6 mt-20 rounded-xl lg:rounded-2xl" src="/public/img/Vitra/Vitra5.webp" alt="Vitra5" />
+      <img  class="col-span-6 -mt-[33vw] md:-mt-[26vw] lg:-mt-[27vw] xl:-mt-[21vw] rounded-xl lg:rounded-2xl" src="/public/img/Vitra/Vitra6.webp" alt="Vitra6" />
+      <img  class="col-span-12 rounded-xl lg:rounded-2xl" src="/public/img/off/Off6.webp" alt="Off6" />
+    </div>
+
+    <div class="w-11/12 lg:w-10/12  mx-auto border-1 rounded-2xl mb-24 lg:mb-32"></div>
+
+    <div class=" mb-12 lg:mb-20">
       <h4 class="text-(--color-Rouge) mb-4">
         OFFF Festival – Plongez au cœur de la création numérique à Barcelone
       </h4>
@@ -82,14 +89,16 @@ const scrollToTop = () => {
       </p>
     </div>
 
-    <div class="mb-20">
+    <VideoPlayer videoSrc="/video/Off.mp4" videoClasses="rounded-xl lg:rounded-2xl mb-12 lg:mb-20" />
+
+    <div class="mb-12 lg:mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Qui peut y participer ?</h4>
       <ul class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
         <li>1ère année : Accessible aux meilleurs étudiants du classement.</li>
         <li>2ème & 3ème année : Ouvert aux alternants, sur proposition des enseignants.</li>
       </ul>
     </div>
-    <div class="mb-20">
+    <div class="mb-12 lg:mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Pourquoi y aller ?</h4>
       <ul class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
         <li>
@@ -104,7 +113,17 @@ const scrollToTop = () => {
       </p>
     </div>
 
-    <div class="mb-20">
+    <div class="grid grid-cols-12 gap-2 lg:gap-5  mb-24 lg:mb-32">
+      <img class="rounded-xl lg:rounded-2xl col-span-6" src="/public/img/off/Off5.webp" alt="Off5" />
+      <img class="rounded-xl lg:rounded-2xl col-span-6" src="/public/img/off/Off4.webp" alt="Off4" />
+      <img class="rounded-xl lg:rounded-2xl col-span-6" src="/public/img/off/Off1.webp" alt="Off1" />
+      <img class="rounded-xl lg:rounded-2xl col-span-6 -mt-[15vw] md:-mt-[12.3vw] xl:-mt-[9.5vw]" src="/public/img/off/Off2.webp" alt="Off2" />
+      <img class="rounded-xl lg:rounded-2xl col-span-12" src="/public/img/off/Off3.webp" alt="Off3" />
+    </div>
+
+    <div class="w-11/12 lg:w-10/12  mx-auto border-1 rounded-2xl mb-24 lg:mb-32"></div>
+
+    <div class="mb-12 lg:mb-20">
       <h4 class="text-(--color-Rouge) mb-4">
         Vitra Design Museum – À la découverte du design et de l’architecture
       </h4>
@@ -125,7 +144,9 @@ const scrollToTop = () => {
       </p>
     </div>
 
-    <div class="mb-20">
+    <VideoPlayer videoSrc="/video/Vitra.mp4" videoClasses="rounded-xl lg:rounded-2xl mb-12 lg:mb-20" />
+
+    <div class="mb-12 lg:mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Qui peut y participer ?</h4>
       <ul class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
         <li>
@@ -134,7 +155,7 @@ const scrollToTop = () => {
         </li>
       </ul>
     </div>
-    <div class="mb-20">
+    <div class="mb-12 lg:mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Pourquoi y aller ?</h4>
       <ul class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
         <li>Explorer des pièces de mobilier et objets de design ayant marqué l’histoire.</li>
@@ -152,6 +173,12 @@ const scrollToTop = () => {
       </p>
     </div>
 
+    <div class="grid grid-cols-12 gap-2 lg:gap-5 py-10 mb-16 lg:py-44 lg:-mb-10">
+      <img src="/public/img/Vitra/Vitra2.webp" alt="Vitra2" />
+      <img src="/public/img/Vitra/Vitra3.webp" alt="Vitra3" />
+      <img src="/public/img/Vitra/Vitra1.webp" alt="Vitra1" />
+      <img src="/public/img/Vitra/Vitra4.webp" alt="Vitra4" />
+    </div>
   </section>
 </template>
 
