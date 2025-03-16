@@ -64,21 +64,46 @@ const scrollToTop = () => {
     </div>
   </div>
 
-  <section>
-    <img src="/public/img//ville/Ville1.webp" alt="" />
-    <img src="/public/img//ville/Ville4.webp" alt="" />
-    <div
-      class="bg-(--color-Jaune) text-(--color-Noir) text-center drop-shadow-lg rounded-xl p-8 px-3 lg:p-10 flex justify-center items-center lg:rounded-3xl"
-    >
-      <img class="w-4/5 md:w-2/3 lg:w-44" src="/public/img/logo/logoprojet1.png" alt="logoiut" />
-    </div>
-    <img src="/public/img//ville/Ville3.webp" alt="" />
-    <img src="/public/img//ville/Ville2.webp" alt="" />
-  </section>
-
   <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
+    <div
+      class="grid grid-cols-1 md:grid-cols-12 gap-2 lg:gap-5 mb-44 lg:mb-76 mx-auto"
+    >
+      <img
+        class="rounded-xl lg:rounded-2xl md:col-span-7 w-full"
+        src="/public/img//ville/Ville1.webp"
+        alt=""
+      />
+      <img
+        class="rounded-xl lg:rounded-2xl md:col-span-5 w-full h-10/12 object-cover"
+        src="/public/img//ville/Ville4.webp"
+        alt=""
+      />
+      <div
+        class="lg:hidden bg-(--color-Jaune) text-(--color-Noir) text-center drop-shadow-lg rounded-xl p-8 px-3 lg:p-10 flex justify-center items-center lg:rounded-3xl"
+      >
+        <img class="w-4/5 md:w-2/3 lg:w-44" src="/public/img/logo/logoprojet1.png" alt="logoiut" />
+      </div>
+      <img
+        class="rounded-xl lg:rounded-2xl md:col-span-4 lg:-mt-[19.5vw]"
+        src="/public/img//ville/Ville3.webp"
+        alt=""
+      />
+      <div
+        class="col-span-3 h-4/5 lg:-mt-[19.5vw] hidden lg:flex bg-(--color-Jaune) text-(--color-Noir) text-center drop-shadow-lg rounded-xl p-8 px-3 lg:p-10 flex justify-center items-center lg:rounded-3xl"
+      >
+        <img class="w-4/5 md:w-2/3 lg:w-44" src="/public/img/logo/logoprojet1.png" alt="logoiut" />
+      </div>
+      <img
+        class="rounded-xl lg:rounded-2xl md:col-span-8 lg:-mt-[22vw] lg:ml-[19.8vw] h-[25rem] w-full"
+        src="/public/img//ville/Ville2.webp"
+        alt=""
+      />
+    </div>
+
     <div class="mb-20">
-      <h4 class="text-(--color-Rouge) mb-4">Aide à la mobilité internationale dans le cadre d'un stage</h4>
+      <h4 class="text-(--color-Rouge) mb-4">
+        Aide à la mobilité internationale dans le cadre d'un stage
+      </h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
         Il existe plusieurs bourses de stage à l’international, qui sont cumulables (certaines sont
         soumises à conditions de ressources).
