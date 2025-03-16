@@ -1,5 +1,5 @@
 <template>
-  <div class="relative lg:col-span-6 z-40">
+  <div class="relative lg:col-span-6 z-50">
     <video ref="videoPlayer" :class="['w-full', 'shadow-xl', videoClasses]" :src="videoSrc"></video>
     <div class="absolute inset-0 flex items-center justify-center">
       <button @click="togglePlayPause" class="text-white focus:outline-none cursor-pointer">

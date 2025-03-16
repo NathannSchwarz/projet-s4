@@ -4,6 +4,7 @@ import Alternance1 from '@/components/icons/Alternance1.vue'
 import Alternance2 from '@/components/icons/Alternance2.vue'
 import Alternance3 from '@/components/icons/Alternance3.vue'
 import Alternance4 from '@/components/icons/Alternance4.vue'
+import Earth from '@/components/icons/Earth.vue'
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -192,15 +193,15 @@ onMounted(() => {
           <img
             :src="item.image"
             :alt="'Alternance' + (index + 1)"
-            class="w-full h-full lg:h-56 object-cover transition-all duration-500"
+            class="w-full h-48 lg:h-56 object-cover transition-all duration-500"
           />
 
           <!-- Overlay pour l'élément actif -->
           <div
             v-if="activeIndex === index"
-            class="absolute inset-0 bg-black/80 gap-5 flex items-center justify-center text-white p-10 transition-opacity duration-300 rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
+            class="absolute inset-0 bg-black/80 gap-10 flex items-center justify-center text-white p-10 transition-opacity duration-300 rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
           >
-            <Earth class="w-28 mb-2" />
+            <Earth class="w-24" />
             <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold">
               {{ item.text }}
             </p>
