@@ -55,7 +55,8 @@ const scrollToTop = () => {
         </div>
 
         <section
-          class="grid grid-cols-2 md:grid-cols-3 gap-3.5 xl:gap-10 mt-10 lg:mt-20 pb-32 xl:pb-56">
+          class="grid grid-cols-2 md:grid-cols-3 gap-3.5 xl:gap-10 mt-10 lg:mt-20 pb-32 xl:pb-56"
+        >
           <div
             v-for="(card, index) in [
               {
@@ -157,10 +158,10 @@ const scrollToTop = () => {
               <router-link to="/StagePage">Stages en Europe</router-link>
             </li>
             <li class="hover:font-semibold transition-all duration-300">
-              <router-link to="/AlternancePage">Alternances Internationale</router-link>
+              <router-link to="/SortiesPage">Sorties Culturelles</router-link>
             </li>
             <li class="hover:font-semibold transition-all duration-300">
-              <router-link to="/SortiesPage">Sorties Culturelles</router-link>
+              <router-link to="/AlternancePage">Alternances en Europe</router-link>
             </li>
           </ul>
         </div>

@@ -1,9 +1,60 @@
 <script setup lang="ts">
 import VideoPlayer from '@/components/VideoPlayer.vue'
+import Alternance1 from '@/components/icons/Alternance1.vue'
+import Alternance2 from '@/components/icons/Alternance2.vue'
+import Alternance3 from '@/components/icons/Alternance3.vue'
+import Alternance4 from '@/components/icons/Alternance4.vue'
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
+import { ref, onMounted, computed } from 'vue'
+
+const email = ref('')
+const message = ref('')
+
+// Fonction pour envoyer l'email
+const submitEmail = () => {
+  if (email.value.trim() !== '') {
+    message.value = 'Merci ! Vous recevrez bientôt les mises à jour.'
+    email.value = '' // Réinitialisation du champ après soumission
+  }
+}
+
+// Liste des éléments avec images et texte
+const items = ref([
+  {
+    image: '/public/img/Alternance/Alternance1.webp',
+    text: 'Travaillant son CV et sa lettre de motivation en anglais.',
+  },
+  {
+    image: '/public/img/Alternance/Alternance2.webp',
+    text: 'Élargissant son réseau et participer à des événements internationaux.',
+  },
+  {
+    image: '/public/img/Alternance/Alternance3.webp',
+    text: 'S’informant sur les entreprises européennes du secteur.',
+  },
+])
+
+const activeIndex = ref(0) // Premier élément actif par défaut
+
+const toggleActive = (index: number) => {
+  if (activeIndex.value !== index) {
+    activeIndex.value = index // Change uniquement si c'est un autre élément
+  }
+}
+
+// Vérifier si on est en mobile (responsive)
+const isMobile = computed(() => window.innerWidth < 768)
+
+// Vérifier la taille de l'écran pour réorganiser l'ordre des éléments
+onMounted(() => {
+  window.addEventListener('resize', () => {
+    isMobile.value = window.innerWidth < 768
+  })
+})
 </script>
 
 <template>
@@ -60,6 +111,44 @@ const scrollToTop = () => {
       </p>
     </div>
 
+    <div class="grid grid-cols-12 grid-row-12 gap-2 text-center lg:gap-5">
+      <div
+        class="bg-(--color-Jaune) flex flex-col justify-center items-center p-5 md:p-10 gap-5 rounded-xl lg:rounded-2xl col-span-6 row-span-5 shadow-2xl lg:col-span-3 lg:row-span-12  hover:bg-(--color-Noir) hover:text-(--color-Jaune) transition-all duration-500 "
+      >
+        <Alternance3 class="w-18 xl:w-28" />
+        <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold">
+          Une expérience professionnelle qui renforce l’employabilité.
+        </p>
+      </div>
+
+      <div
+        class="bg-(--color-Jaune) flex flex-col justify-center items-center p-5 md:p-10 gap-5 rounded-xl lg:rounded-2xl col-span-6 row-span-6 shadow-2xl lg:col-span-9 lg:row-span-5  hover:bg-(--color-Noir) hover:text-(--color-Jaune) transition-all duration-500"
+      >
+        <Alternance4 class="w-18 xl:w-28" />
+        <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold lg:w-2/3 lg:mx-auto">
+          Une immersion dans un environnement multiculturel favorisant l’apprentissage des langues.
+        </p>
+      </div>
+
+      <div
+        class="bg-(--color-Jaune) flex flex-col justify-center items-center p-5 md:p-8 gap-5 rounded-xl lg:rounded-2xl col-span-6 row-span-7 shadow-2xl lg:col-span-4 lg:row-span-7  hover:bg-(--color-Noir) hover:text-(--color-Jaune) transition-all duration-500"
+      >
+        <Alternance2 class="w-18 xl:w-28" />
+        <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold">
+          L’opportunité de travailler avec des entreprises innovantes et d’élargir son réseau.
+        </p>
+      </div>
+
+      <div
+        class="bg-(--color-Jaune) flex flex-col justify-center items-center p-5 md:p-10 gap-5 rounded-xl lg:rounded-2xl col-span-6 row-span-6 shadow-2xl lg:col-span-5 lg:row-span-7  hover:bg-(--color-Noir) hover:text-(--color-Jaune) transition-all duration-500"
+      >
+        <Alternance1 class="w-14 xl:w-24" />
+        <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold">
+          Une valorisation unique sur le CV, recherchée par les recruteurs.
+        </p>
+      </div>
+    </div>
+
     <div class="mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Où en est le projet ?</h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
@@ -86,10 +175,82 @@ const scrollToTop = () => {
         Même si le programme officiel n’est pas encore lancé, il est possible d’anticiper cette
         opportunité en :
       </p>
+
+      <div class="grid grid-cols-2 md:grid-cols-9 gap-4 transition-all duration-500">
+        <div
+          v-for="(item, index) in items"
+          :key="index"
+          class="relative transition-all duration-500 ease-in-out flex flex-col items-center justify-center overflow-hidden cursor-pointer rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
+          :class="{
+            'col-span-2 order-first md:order-none': activeIndex === index && isMobile, // En mobile, élément actif en haut
+            'col-span-1 md:col-span-2': activeIndex !== index,
+            'col-span-2 md:col-span-5': activeIndex === index,
+          }"
+          @click="toggleActive(index)"
+        >
+          <!-- Image -->
+          <img
+            :src="item.image"
+            :alt="'Alternance' + (index + 1)"
+            class="w-full h-full lg:h-56 object-cover transition-all duration-500"
+          />
+
+          <!-- Overlay pour l'élément actif -->
+          <div
+            v-if="activeIndex === index"
+            class="absolute inset-0 bg-black/80 gap-5 flex items-center justify-center text-white p-10 transition-opacity duration-300 rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
+          >
+            <Earth class="w-28 mb-2" />
+            <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold">
+              {{ item.text }}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Restez informé sur l’évolution du projet !</h4>
+
+      <div
+        class="flex flex-col items-center space-y-6 bg-(--color-Turquoise) p-8 lg:py-14 shadow-2xl mx-auto rounded-tl-[70px] rounded-tr-[10px] rounded-bl-[10px] rounded-br-[70px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px]"
+      >
+        <!-- Image et Texte -->
+        <div class="grid grid-cols-8 flex justify-center items-center">
+          <img
+            class="mx-auto w-40 md:w-44 xl:w-56 col-span-8 md:col-span-3"
+            src="/public/img/logo/logoprojet1.png"
+            alt="Logo"
+          />
+          <p
+            class="mt-4 text-[14px] md:text-[16px] xl:text-[18px] col-span-8 md:col-start-4 md:col-span-4"
+          >
+            L’avenir de votre formation pourrait bientôt s’écrire à l’international. Soyez prêts à
+            saisir cette opportunité ! Si vous êtes intéressé et souhaitez être parmi les premiers à
+            en bénéficier, inscrivez-vous pour recevoir les mises à jour !
+          </p>
+        </div>
+
+        <!-- Formulaire -->
+        <form @submit.prevent="submitEmail" class="w-full md:w-4/5 flex flex-col items-center">
+          <input
+            v-model="email"
+            type="email"
+            placeholder="Inscrivez votre email :)"
+            class="w-full px-4 py-2 border text-center shadow-sm focus:outline-none focus:ring-2 focus:ring-(--color-Jaune) rounded-tl-[30px] rounded-tr-[10px] lg:rounded-tl-[40px] lg:rounded-tr-[20px]"
+            required
+          />
+          <button
+            type="submit"
+            class="w-full bg-black text-white py-2 border-black border-b-1 border-r-1 border-l-1 hover:bg-(--color-Jaune) transition duration-300 rounded-bl-[10px] rounded-br-[30px] hover:text-black lg:rounded-bl-[20px] lg:rounded-br-[40px]"
+          >
+            S'inscrire
+          </button>
+
+          <!-- Message de confirmation -->
+          <p v-if="message" class="text-green-600 font-semibold">{{ message }}</p>
+        </form>
+      </div>
     </div>
   </section>
 

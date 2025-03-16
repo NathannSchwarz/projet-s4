@@ -5,7 +5,7 @@ const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
 const showText = ref(false)
 
@@ -25,8 +25,6 @@ const toggleText2 = () => {
 const toggleText3 = () => {
   showText3.value = !showText3.value
 }
-// Détecter si on est sur mobile
-
 </script>
 
 <template>
@@ -93,12 +91,10 @@ const toggleText3 = () => {
 
   <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-12 md:grid-row-5 mb-44 lg:mb-76 gap-5">
-
-
-      <div class="relative w-full group col-span-12 md:col-span-7 ">
+      <div class="relative w-full group col-span-12 md:col-span-7">
         <!-- Image -->
         <img
-          class="rounded-xl lg:rounded-2xl object-cover h-[90vw]  w-full md:h-auto"
+          class="rounded-xl lg:rounded-2xl object-cover h-[90vw] w-full md:h-auto"
           src="/public/img/ville/Ville1.webp"
           alt=""
         />
@@ -106,7 +102,7 @@ const toggleText3 = () => {
         <!-- Bouton (visible en mobile) -->
         <button
           @click="toggleText"
-          class="absolute top-3 left-3 bg-black/50 text-white p-1.5 rounded-full lg:hidden z-10 transition-transform duration-300"
+          class="absolute top-3 left-3 bg-black/50 text-white p-1.5 rounded-full xl:hidden z-10 transition-transform duration-300"
           :class="{ 'rotate-180': showText }"
         >
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -119,17 +115,19 @@ const toggleText3 = () => {
           class="absolute top-0 left-0 w-full h-full bg-black/60 text-white flex flex-col p-5 rounded-xl transition-opacity duration-500 opacity-0 lg:group-hover:opacity-100 justify-end pb-10 md:h-[28.5vw] lg:h-[28.6vw] xl:h-[22.35vw]"
           :class="{ 'opacity-100': showText }"
         >
-          <h4 class="text-xl font-semibold">Stage à l'étranger</h4>
-          <p class="text-sm mt-2">
-            Découvrez des opportunités uniques pour développer vos compétences et explorer de
-            nouveaux horizons.
+          <h4 class="text-xl font-semibold">Lisbonne</h4>
+          <p class="text-[14px] md:text-[12px] xl:text-[16px] font-poppins mt-2">
+            Capitale du Portugal, c’est une ville dynamique et ensoleillée, réputée pour son mélange
+            unique de tradition et de modernité. Entre ses ruelles pavées colorées, ses célèbres
+            tramways jaunes et ses quartiers historiques comme l’Alfama et le Bairro Alto, elle
+            offre une atmosphère chaleureuse et inspirante.
           </p>
         </div>
       </div>
-      <div class="relative w-full group col-span-12 md:col-span-5 md:row-span-2 ">
+      <div class="relative w-full group col-span-12 md:col-span-5 md:row-span-2">
         <!-- Image -->
         <img
-          class="rounded-xl lg:rounded-2xl object-cover h-[90vw]  w-full md:h-[45vw] xl:h-[32vw]"
+          class="rounded-xl lg:rounded-2xl object-cover h-[90vw] w-full md:h-[45vw] xl:h-[32vw]"
           src="/public/img/ville/Ville4.webp"
           alt=""
         />
@@ -137,7 +135,7 @@ const toggleText3 = () => {
         <!-- Bouton (visible en mobile) -->
         <button
           @click="toggleText1"
-          class="absolute top-3 left-3 bg-black/50 text-white p-1.5 rounded-full lg:hidden z-10 transition-transform duration-300"
+          class="absolute top-3 left-3 bg-black/50 text-white p-1.5 rounded-full xl:hidden z-10 transition-transform duration-300"
           :class="{ 'rotate-180': showText1 }"
         >
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -147,13 +145,15 @@ const toggleText3 = () => {
 
         <!-- Texte (visible au hover en desktop et au clic en mobile) -->
         <div
-          class="absolute top-0 left-0 w-full h-full bg-black/60 text-white flex flex-col p-5 rounded-xl transition-opacity duration-500 opacity-0 lg:group-hover:opacity-100 justify-end pb-10"
+          class="absolute top-0 left-0 w-full h-full bg-black/60 text-white flex flex-col p-5 rounded-xl transition-opacity duration-500 opacity-0 lg:group-hover:opacity-100 justify-end pb-10 md:h-[45vw] xl:h-[32vw]"
           :class="{ 'opacity-100': showText1 }"
         >
-          <h4 class="text-xl font-semibold">Stage à l'étranger</h4>
-          <p class="text-sm mt-2">
-            Découvrez des opportunités uniques pour développer vos compétences et explorer de
-            nouveaux horizons.
+          <h4 class="text-xl font-semibold">Lisbonne</h4>
+          <p class="text-[14px] md:text-[12px] xl:text-[16px] font-poppins mt-2">
+            Capitale du Portugal, c’est une ville dynamique et ensoleillée, réputée pour son mélange
+            unique de tradition et de modernité. Entre ses ruelles pavées colorées, ses célèbres
+            tramways jaunes et ses quartiers historiques comme l’Alfama et le Bairro Alto, elle
+            offre une atmosphère chaleureuse et inspirante.
           </p>
         </div>
       </div>
@@ -164,7 +164,9 @@ const toggleText3 = () => {
         <img class="w-4/5 md:w-2/3 lg:w-44" src="/public/img/logo/logoprojet1.png" alt="logoiut" />
       </div>
 
-      <div class="relative w-full group col-span-12 md:col-span-5 md:row-span-2 md:-mt-[2vw] xl:-mt-[0vw] ">
+      <div
+        class="relative w-full group col-span-12 md:col-span-5 md:row-span-2 md:-mt-[0.5vw] xl:-mt-[0vw]"
+      >
         <!-- Image -->
         <img
           class="rounded-xl lg:rounded-2xl object-cover h-[90vw] w-full md:h-[45vw] xl:h-[32vw]"
@@ -175,7 +177,7 @@ const toggleText3 = () => {
         <!-- Bouton (visible en mobile) -->
         <button
           @click="toggleText2"
-          class="absolute top-3 left-3 bg-black/50 text-white p-1.5 rounded-full lg:hidden z-10 transition-transform duration-300"
+          class="absolute top-3 left-3 bg-black/50 text-white p-1.5 rounded-full xl:hidden z-10 transition-transform duration-300"
           :class="{ 'rotate-180': showText2 }"
         >
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -185,18 +187,20 @@ const toggleText3 = () => {
 
         <!-- Texte (visible au hover en desktop et au clic en mobile) -->
         <div
-          class="absolute top-0 left-0 w-full h-full bg-black/60 text-white flex flex-col p-5 rounded-xl transition-opacity duration-500 opacity-0 lg:group-hover:opacity-100 justify-end pb-10"
+          class="absolute top-0 left-0 w-full h-full bg-black/60 text-white flex flex-col p-5 rounded-xl transition-opacity duration-500 opacity-0 lg:group-hover:opacity-100 justify-end pb-10 md:h-[45vw] xl:h-[32vw]"
           :class="{ 'opacity-100': showText2 }"
         >
-          <h4 class="text-xl font-semibold">Stage à l'étranger</h4>
-          <p class="text-sm mt-2">
-            Découvrez des opportunités uniques pour développer vos compétences et explorer de
-            nouveaux horizons.
+          <h4 class="text-xl font-semibold">Lisbonne</h4>
+          <p class="text-[14px] md:text-[12px] xl:text-[16px] font-poppins mt-2">
+            Capitale du Portugal, c’est une ville dynamique et ensoleillée, réputée pour son mélange
+            unique de tradition et de modernité. Entre ses ruelles pavées colorées, ses célèbres
+            tramways jaunes et ses quartiers historiques comme l’Alfama et le Bairro Alto, elle
+            offre une atmosphère chaleureuse et inspirante.
           </p>
         </div>
       </div>
       <div
-        class="col-span-2 md:row-span-1  hidden md:flex md:-mt-[2vw] md:h-[12vw] xl:-mt-[0.15vw] xl:h-[9vw]  bg-(--color-Jaune) text-(--color-Noir) text-center drop-shadow-lg rounded-xl p-8 px-3  flex justify-center items-center lg:rounded-3xl "
+        class="col-span-2 md:row-span-1 hidden md:flex md:-mt-[0.5vw] md:h-[14vw] xl:-mt-[0.15vw] xl:h-[9vw] bg-(--color-Jaune) text-(--color-Noir) text-center drop-shadow-lg rounded-xl p-8 px-3 flex justify-center items-center lg:rounded-3xl"
       >
         <img class="w-4/5 md:w-12/12" src="/public/img/logo/logoprojet1.png " alt="logoiut" />
       </div>
@@ -212,7 +216,7 @@ const toggleText3 = () => {
         <!-- Bouton (visible en mobile) -->
         <button
           @click="toggleText3"
-          class="absolute top-3 left-3 bg-black/50 text-white p-1.5 rounded-full lg:hidden z-10 transition-transform duration-300"
+          class="absolute top-3 left-3 bg-black/50 text-white p-1.5 rounded-full xl:hidden z-10 transition-transform duration-300"
           :class="{ 'rotate-180': showText3 }"
         >
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -222,13 +226,15 @@ const toggleText3 = () => {
 
         <!-- Texte (visible au hover en desktop et au clic en mobile) -->
         <div
-          class="absolute top-0 left-0 w-full h-full bg-black/60 text-white flex flex-col p-5 rounded-xl transition-opacity duration-500 opacity-0 lg:group-hover:opacity-100 justify-end pb-10"
+          class="absolute top-0 left-0 w-full h-full bg-black/60 text-white flex flex-col p-5 rounded-xl transition-opacity duration-500 opacity-0 lg:group-hover:opacity-100 justify-end pb-10 md:h-[28.5vw] xl:h-[22.4vw]"
           :class="{ 'opacity-100': showText3 }"
         >
-          <h4 class="text-xl font-semibold">Stage à l'étranger</h4>
-          <p class="text-sm mt-2">
-            Découvrez des opportunités uniques pour développer vos compétences et explorer de
-            nouveaux horizons.
+          <h4 class="text-xl font-semibold">Lisbonne</h4>
+          <p class="text-[14px] md:text-[12px] xl:text-[16px] font-poppins mt-2">
+            Capitale du Portugal, c’est une ville dynamique et ensoleillée, réputée pour son mélange
+            unique de tradition et de modernité. Entre ses ruelles pavées colorées, ses célèbres
+            tramways jaunes et ses quartiers historiques comme l’Alfama et le Bairro Alto, elle
+            offre une atmosphère chaleureuse et inspirante.
           </p>
         </div>
       </div>
