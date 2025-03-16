@@ -1,6 +1,12 @@
 <template>
   <div class="relative lg:col-span-6 z-50">
-    <video ref="videoPlayer" :class="['w-full', 'shadow-xl', videoClasses]" :src="videoSrc"></video>
+    <video
+      ref="videoPlayer"
+      :class="['w-full', 'shadow-xl', videoClasses]"
+      :src="videoSrc"
+      preload="metadata"
+      playsinline
+    ></video>
     <div class="absolute inset-0 flex items-center justify-center">
       <button @click="togglePlayPause" class="text-white focus:outline-none cursor-pointer">
         <svg v-if="!isPlaying" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
@@ -10,7 +16,10 @@
           <path d="M6 5.14h4v14h-4V5.14zm8 0h4v14h-4V5.14z" />
         </svg>
       </button>
-      <button @click="toggleFullScreen" class="ml-4 text-white focus:outline-none cursor-pointer hidden lg:flex">
+      <button
+        @click="toggleFullScreen"
+        class="ml-4 text-white focus:outline-none cursor-pointer hidden lg:flex"
+      >
         <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
           <path d="M3 3h6v6H3zm12 0h6v6h-6zm0 12h6v6h-6zm-12 6h6v6H3zM15 15h6v6h-6z" />
         </svg>

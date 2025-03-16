@@ -193,7 +193,7 @@ onMounted(() => {
           <img
             :src="item.image"
             :alt="'Alternance' + (index + 1)"
-            class="w-full h-48 lg:h-56 object-cover transition-all duration-500"
+            class="w-full h-40 lg:h-56 object-cover transition-all duration-500"
           />
 
           <!-- Overlay pour l'élément actif -->
