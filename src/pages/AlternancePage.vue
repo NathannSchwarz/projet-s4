@@ -5,6 +5,7 @@ import Alternance2 from '@/components/icons/Alternance2.vue'
 import Alternance3 from '@/components/icons/Alternance3.vue'
 import Alternance4 from '@/components/icons/Alternance4.vue'
 import Earth from '@/components/icons/Earth.vue'
+import VideoIntro from '@/components/VideoAccueil.vue'
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -59,7 +60,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
+
+   <VideoIntro
+    title="ALTERNANCE"
+    subtitle="EN EUROPE"
+    videoSrc="/public/video/IUT.mp4"
+    class="hidden xl:block"
+  />
+  <section class="block xl:hidden relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
     <!-- Image en arrière-plan -->
     <img
       class="absolute h-[75vh] md:h-[85vh] lg:h-[70vh] xl:h-[85vh] xl:w-1/3 object-cover z-0"

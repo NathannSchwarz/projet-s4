@@ -1,9 +1,18 @@
 <script setup lang="ts">
 import VideoPlayer from '@/components/VideoPlayer.vue'
+import VideoIntro from '@/components/VideoAccueil.vue'
 </script>
 
 <template>
-  <section class="relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
+
+  <VideoIntro
+    title="SORTIES"
+    subtitle="CULTURELLES"
+    videoSrc="/public/video/IUT.mp4"
+    class="hidden xl:block"
+  />
+
+  <section class="block xl:hidden  relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
     <!-- Image en arrière-plan -->
     <img
       class="absolute h-[75vh] md:h-[85vh] lg:h-[70vh] xl:h-[85vh] xl:w-1/3 object-cover z-0"
