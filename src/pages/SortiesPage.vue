@@ -8,7 +8,7 @@ import VideoIntro from '@/components/VideoAccueil.vue'
   <VideoIntro
     title="SORTIES"
     subtitle="CULTURELLES"
-    videoSrc="/public/video/IUT.mp4"
+    videoSrc="/video/IUT.mp4"
     class="hidden xl:block"
   />
 

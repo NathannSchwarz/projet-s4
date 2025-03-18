@@ -64,7 +64,7 @@ const props = defineProps({
   },
   videoSrc: {
     type: String,
-    default: '/public/video/IUT.mp4',
+    default: '/video/IUT.mp4',
   },
 })
 

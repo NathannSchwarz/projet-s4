@@ -64,7 +64,7 @@ onMounted(() => {
    <VideoIntro
     title="ALTERNANCE"
     subtitle="EN EUROPE"
-    videoSrc="/public/video/IUT.mp4"
+    videoSrc="/video/IUT.mp4"
     class="hidden xl:block"
   />
   <section class="block xl:hidden relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
