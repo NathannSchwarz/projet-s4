@@ -345,11 +345,11 @@ const toggleText3 = () => {
     <div class="mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Ils l’ont fait, pourquoi pas vous ?</h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        Partir à l’étranger, c’est bien plus qu’une simple expérience académique : c’est une
-        aventure humaine et professionnelle qui transforme une carrière. Que ce soit en stage, en
+        Partir à l’étranger, c’est bien plus qu’une simple expérience académique : <span class="font-semibold">c’est une
+        aventure humaine et professionnelle</span>  qui transforme une carrière. Que ce soit en stage, en
         échange universitaire ou en alternance, nos anciens étudiants ont franchi le pas et
         partagent ici leur parcours. <br /><br />
-        Découvrez à travers leurs témoignages leurs défis, leurs réussites, leurs anecdotes, et
+        <span class="font-semibold">Découvrez à travers leurs témoignages</span> leurs défis, leurs réussites, leurs anecdotes, et
         surtout, l’impact qu’a eu cette expérience sur leur avenir. De Berlin à Madrid, en passant
         par Amsterdam et Barcelone, chaque destination offre son lot de découvertes et
         d’opportunités.
