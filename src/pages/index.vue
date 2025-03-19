@@ -5,7 +5,7 @@ import DataIntro from '@/components/DataIntro.vue'
 import VideoIntro from '@/components/VideoAccueil.vue'
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  window.scrollTo(0, 0);
 }
 </script>
 
@@ -15,7 +15,7 @@ const scrollToTop = () => {
        - Masqué pour les tailles < xl
        - Visible à partir de xl
   -->
-       
+
   <VideoIntro class="hidden xl:block" />
 
   <!--
@@ -58,11 +58,11 @@ const scrollToTop = () => {
   <div class="w-11/12 md:w-9/12 xl:w-7/12 mt-20 mx-auto lg:mt-44">
     <h4 class="text-(--color-Rouge) mb-4">L'Europe : un terrain de jeu professionnel</h4>
     <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-      Chaque année, des étudiants en MMI partent en stage, alternance et profitent des différents
-      voyages organisés dans divers pays d'Europe. C'est ainsi l'occasion d'enrichir son parcours
+      Chaque année, des étudiants en MMI partent en <span class="font-semibold">stage</span> ,<span class="font-semibold">alternance</span> et profitent des différents
+      voyages organisés dans <span class="font-semibold">divers pays d'Europe</span>. C'est ainsi l'occasion d'enrichir son parcours
       académique et sa culture, tout en découvrant les différents pays d'Europe ! <br /><br />
-      Les expériences concrètes et enrichissantes au sein d'entreprises sont une véritable
-      opportunité qui sera importante pour la carrière de nos étudiants. Le tout est encadré par les
+      Les expériences concrètes et enrichissantes au sein d'entreprises sont <span class="font-semibold">une véritable
+      opportunité </span>qui sera importante pour la carrière de nos étudiants. Le tout est encadré par les
       enseignants référents de l'Université, qui n'hésiteront pas à vous aidez concernant les
       démarches et demandes de bourses.
     </p>
@@ -74,11 +74,11 @@ const scrollToTop = () => {
     <div class="mb-20">
       <h4 class="text-(--color-Rouge) mb-4">Ils l’ont fait, pourquoi pas vous ?</h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        Partir à l’étranger, c’est bien plus qu’une simple expérience académique : c’est une
-        aventure humaine et professionnelle qui transforme une carrière. Que ce soit en stage, en
+        Partir à l’étranger, c’est bien plus qu’une simple expérience académique :<span class="font-semibold">c’est une
+        aventure humaine et professionnelle</span>  qui transforme une carrière. Que ce soit en stage, en
         échange universitaire ou en alternance, nos anciens étudiants ont franchi le pas et
         partagent ici leur parcours. <br /><br />
-        Découvrez à travers leurs témoignages leurs défis, leurs réussites, leurs anecdotes, et
+        <span class="font-semibold">Découvrez à travers leurs témoignages</span> leurs défis, leurs réussites, leurs anecdotes, et
         surtout, l’impact qu’a eu cette expérience sur leur avenir. De Berlin à Madrid, en passant
         par Amsterdam et Barcelone, chaque destination offre son lot de découvertes et
         d’opportunités.
@@ -144,7 +144,7 @@ const scrollToTop = () => {
     </div>
 
     <div
-      class="p-5 py-7 lg:p-10 lg:py-7 bg-gradient-to-b from-[var(--color-Jaune)] to-[var(--color-Blanc)] lg:bg-gradient-to-r lg:from-[var(--color-Jaune)] lg:to-[var(--color-Blanc)] text-(--color-Blanc) grid grid-cols-1 lg:grid-cols-9 gap-5 lg:gap-8 lg:items-center lg:justify-center inset-shadow-md rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px] mb-20 lg:mb-40"
+      class="p-5 py-7 lg:p-10 lg:py-7 bg-gradient-to-b from-[var(--color-Jaune)] to-[var(--color-Blanc)] lg:bg-gradient-to-r lg:from-[var(--color-Jaune)] lg:to-[var(--color-Blanc)] text-(--color-Blanc) grid grid-cols-1 lg:grid-cols-9 gap-5 lg:gap-8 lg:items-center lg:justify-center inset-shadow-md rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px] mb-40 lg:mb-70"
     >
       <!-- Conteneur des textes -->
       <div class="space-y-3 lg:col-span-3">

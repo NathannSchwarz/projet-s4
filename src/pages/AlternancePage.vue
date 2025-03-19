@@ -8,7 +8,7 @@ import Earth from '@/components/icons/Earth.vue'
 import VideoIntro from '@/components/VideoAccueil.vue'
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  window.scrollTo(0, 0);
 }
 
 import { ref, onMounted, computed } from 'vue'
@@ -32,7 +32,7 @@ const items = ref([
   },
   {
     image: '/img/Alternance/Alternance2.webp',
-    text: 'Élargissant son réseau et participer à des événements internationaux.',
+    text: 'Élargissant son réseau et participer à des événements.',
   },
   {
     image: '/img/Alternance/Alternance3.webp',
@@ -102,25 +102,25 @@ onMounted(() => {
     </h2>
   </section>
 
-  <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
-    <div class="mb-20">
+  <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto lg:mt-44">
+    <div class="mb-20 space-y-4">
       <h4 class="text-(--color-Rouge) mb-4">L’Alternance en Europe – Une opportunité en devenir</h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        L’alternance est une expérience formatrice qui permet de combiner études et immersion en
+        L’alternance est <span class="font-semibold">une expérience formatrice</span>  qui permet de combiner études et immersion en
         entreprise. Aujourd’hui, les étudiants du MMi peuvent réaliser leur alternance en France,
-        mais une nouvelle opportunité se dessine : l’alternance en Europe.
+        mais une nouvelle opportunité se dessine : <span class="font-semibold">l’alternance en Europe</span> .
       </p>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        L’IUT explore actuellement la possibilité de développer des partenariats avec des
-        entreprises européennes afin de permettre aux étudiants de réaliser leur alternance à
-        l’international, tout en poursuivant leur formation en France.
+        L’IUT explore actuellement la possibilité de développer <span class="font-semibold">des partenariats avec des
+        entreprises européennes</span>  afin de permettre aux étudiants de <span class="font-semibold">réaliser leur alternance à
+        l’international</span> , tout en poursuivant leur formation en France.
       </p>
-      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+      <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold text-(--color-Rouge)">
         Pourquoi envisager une alternance en Europe ?
       </p>
     </div>
 
-    <div class="grid grid-cols-12 grid-row-12 gap-2 text-center lg:gap-5">
+    <div class="grid grid-cols-12 grid-row-12 gap-2 text-center lg:gap-5 mb-44 lg:mb-54 ">
       <div
         class="bg-(--color-Jaune) flex flex-col justify-center items-center p-5 md:p-10 gap-5 rounded-xl lg:rounded-2xl col-span-6 row-span-5 shadow-2xl lg:col-span-3 lg:row-span-12  hover:bg-(--color-Noir) hover:text-(--color-Jaune) transition-all duration-500 "
       >
@@ -158,34 +158,34 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="mb-20">
+    <div class="space-y-4 mb-44 lg:mb-54 ">
       <h4 class="text-(--color-Rouge) mb-4">Où en est le projet ?</h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        L’alternance à l’étranger est encore en phase de réflexion au sein du département MMi. L’IUT
-        travaille actuellement à établir des contacts avec des entreprises et institutions en
+        L’alternance à l’étranger est encore en <span class="font-semibold">phase de réflexion</span>  au sein du département MMi. L’IUT
+        travaille actuellement à établir <span class="font-semibold">des contacts avec des entreprises et institutions</span>  en
         Europe, dans des secteurs comme :
       </p>
-      <ul class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        <li>Le design et l’UX/UI → Studios créatifs en Allemagne, aux Pays-Bas ou en Suède.</li>
-        <li>Le développement web et numérique → Startups tech à Barcelone, Berlin ou Amsterdam.</li>
-        <li>La communication et le marketing digital → Agences à Madrid, Bruxelles ou Milan.</li>
+      <ul class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins ml-2 lg:ml-3">
+        <li>• <span class="font-semibold">Le design et l’UX/UI</span>  → Studios créatifs en Allemagne, aux Pays-Bas ou en Suède.</li>
+        <li>• <span class="font-semibold">Le développement web et numérique</span>  → Startups tech à Barcelone, Berlin ou Amsterdam.</li>
+        <li>• <span class="font-semibold">La communication et le marketing digital</span> → Agences à Madrid, Bruxelles ou Milan.</li>
       </ul>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        Les enseignants du MMi encouragent déjà les étudiants à participer à des événements
-        internationaux, comme le OFFF Festival de Barcelone (voir page dédié) , afin de développer
+        Les enseignants du MMi encouragent déjà les étudiants <span class="font-semibold">à participer à des événements
+        internationaux</span> , comme <span class="font-semibold">le OFFF Festival de Barcelone</span><a href="https://www.offf.barcelona/offf-schedule"><span class="text-(--color-Rouge)"> (voir page dédié)</span></a>   , afin de développer
         leur réseau professionnel et de se préparer à une future expérience en entreprise à
         l’étranger.
       </p>
     </div>
 
-    <div class="mb-20">
+    <div class="mb-44 lg:mb-54 ">
       <h4 class="text-(--color-Rouge) mb-4">Comment se préparer dès maintenant ?</h4>
-      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins mb-10">
         Même si le programme officiel n’est pas encore lancé, il est possible d’anticiper cette
         opportunité en :
       </p>
 
-      <div class="grid grid-cols-2 md:grid-cols-9 gap-4 transition-all duration-500">
+      <div class="grid grid-cols-2 md:grid-cols-9 gap-4 transition-all duration-500 ">
         <div
           v-for="(item, index) in items"
           :key="index"
@@ -218,7 +218,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="mb-20">
+    <div class="mb-44 lg:mb-54 ">
       <h4 class="text-(--color-Rouge) mb-4">Restez informé sur l’évolution du projet !</h4>
 
       <div
@@ -231,13 +231,19 @@ onMounted(() => {
             src="/public/img/logo/logoprojet1.png"
             alt="Logo"
           />
-          <p
-            class="mt-4 text-[14px] md:text-[16px] xl:text-[18px] col-span-8 md:col-start-4 md:col-span-4"
+          <div class="mt-4 text-[14px] md:text-[16px] xl:text-[18px] col-span-8 md:col-start-4 md:col-span-4 space-y-2 lg:space-y-3">
+            <p
+
           >
             L’avenir de votre formation pourrait bientôt s’écrire à l’international. Soyez prêts à
-            saisir cette opportunité ! Si vous êtes intéressé et souhaitez être parmi les premiers à
-            en bénéficier, inscrivez-vous pour recevoir les mises à jour !
+            saisir cette opportunité !
           </p>
+          <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold"> Si vous êtes intéressé et souhaitez être parmi les premiers à
+            en bénéficier, inscrivez-vous pour recevoir les mises à jour !</p>
+
+          </div>
+
+
         </div>
 
         <!-- Formulaire -->
@@ -264,22 +270,22 @@ onMounted(() => {
   </section>
 
   <section class="w-11/12 md:w-9/12 xl:w-7/12 mx-auto">
-    <div class="mb-20">
+    <div class="mb-20 space-y-4">
       <h4 class="text-(--color-Rouge) mb-4">
         Stages à l’étranger : une inspiration pour les futurs alternants
       </h4>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
         Nos anciens étudiants ont vécu des stages en Europe, découvrant de nouvelles méthodes de
         travail, développant leurs compétences et élargissant leur réseau. Leurs expériences offrent
-        un aperçu concret de ce que pourrait être l’alternance à l’international, une opportunité en
+        <span class="font-semibold">un aperçu concret de ce que pourrait être l’alternance à l’international</span>, une opportunité en
         cours de développement au MMi.
       </p>
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        De Berlin à Barcelone, ces témoignages montrent à quel point travailler à l’étranger est un
-        atout. L’alternance en Europe suivra cette dynamique, combinant études et immersion
+        De Berlin à Barcelone, ces témoignages montrent à quel point<span class="font-semibold">travailler à l’étranger est un
+        atout</span> . L’alternance en Europe suivra cette dynamique, combinant études et immersion
         professionnelle.
       </p>
-      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
+      <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold">
         Découvrez leurs parcours et projetez-vous dans votre futur à l’international !
       </p>
     </div>
@@ -314,7 +320,7 @@ onMounted(() => {
     </div>
 
     <div
-      class="p-5 py-7 lg:p-10 lg:py-7 bg-gradient-to-b from-[var(--color-Jaune)] to-[var(--color-Blanc)] lg:bg-gradient-to-r lg:from-[var(--color-Blanc)] lg:to-[var(--color-Jaune)] text-(--color-Blanc) grid grid-cols-1 lg:grid-cols-9 gap-5 lg:gap-6 lg:items-center lg:justify-center inset-shadow-md rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px] my-20 lg:my-40"
+      class="p-5 py-7 lg:p-10 lg:py-7 bg-gradient-to-b from-[var(--color-Jaune)] to-[var(--color-Blanc)] lg:bg-gradient-to-r lg:from-[var(--color-Blanc)] lg:to-[var(--color-Jaune)] text-(--color-Blanc) grid grid-cols-1 lg:grid-cols-9 gap-5 lg:gap-6 lg:items-center lg:justify-center inset-shadow-md rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px] mb-40 lg:mb-70"
     >
       <!-- Conteneur des textes -->
       <div class="space-y-3 lg:col-span-3 lg:order-2">

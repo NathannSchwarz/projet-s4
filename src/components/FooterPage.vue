@@ -28,8 +28,119 @@ const resetGrid = () => {
 }
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  window.scrollTo(0, 0)
 }
+
+// Définition du type pour chaque carte
+interface Card {
+  icon: any
+  title: string
+  text: string
+  description: string
+  color: string
+}
+
+// Déclaration des cartes avec un typage strict
+const cards: Readonly<Card[]> = [
+  {
+    icon: SchoolIcon,
+    title: 'CANDIDATER',
+    text: 'Pour partir à l’étranger via le MMi, il faut suivre plusieurs étapes',
+    description: `
+    <p>Pour effectuer une <span class="!font-semibold">mobilité internationale</span> avec le <span class="!font-semibold">BUT MMI</span>, il est essentiel de suivre un processus précis :</p>
+    <ul class="list-disc ml-5 mt-2">
+      <li><span class="!font-semibold">Se renseigner</span> : Découvrez les opportunités <i>(stages, échanges académiques, alternances)</i> et les destinations disponibles.</li>
+      <li><span class="!font-semibold">Préparer son dossier</span> : Inclut un <span class="!font-semibold">CV</span>, une <span class="!font-semibold">lettre de motivation</span> et un <span class="!font-semibold">portfolio</span> si nécessaire.</li>
+      <li><span class="!font-semibold">Respecter les prérequis</span> : Certaines destinations exigent un <i>niveau de langue spécifique</i> ou un <i>entretien</i>.</li>
+      <li><span class="!font-semibold">Finaliser les démarches administratives</span> : Convention de stage, inscription à l’université partenaire, visa.</li>
+    </ul>
+  `,
+    color: '--color-Jaune',
+  },
+
+  {
+    icon: EuroIcon,
+    title: 'AIDES FINANCIÈRES',
+    text: 'Il existe plusieurs bourses pour financer votre mobilité',
+    description: `
+    <p>Pour <span class="!font-semibold">alléger les coûts</span> de votre mobilité, plusieurs aides sont disponibles :</p>
+    <ul class="list-disc ml-5 mt-2">
+      <li><span class="!font-semibold">Erasmus+</span> : Une bourse couvrant une partie des frais de séjour en Europe.</li>
+      <li><span class="!font-semibold">Aide à la Mobilité Internationale (AMI)</span> : Une aide de l'État pour les étudiants en stage ou échange.</li>
+      <li><span class="!font-semibold">Aides régionales et départementales</span> : Variable selon votre lieu de résidence.</li>
+      <li><span class="!font-semibold">Bourses d’entreprises et fondations</span> : Certaines entreprises offrent des subventions aux étudiants.</li>
+    </ul>
+    <p class="mt-2">Renseignez-vous auprès du <span class="!font-semibold">service des relations internationales</span> de votre IUT pour connaître les critères d’éligibilité.</p>
+  `,
+    color: '--color-Rouge',
+  },
+
+  {
+    icon: PlaneIcon,
+    title: 'DESTINATION',
+    text: 'Le choix de la destination dépend de plusieurs critères',
+    description: `
+    <p>Le choix de votre destination dépend de plusieurs critères :</p>
+    <ul class="list-disc ml-5 mt-2">
+      <li><span class="!font-semibold">Projet professionnel</span> : Optez pour un pays en lien avec votre futur métier.</li>
+      <li><span class="!font-semibold">Niveau de langue</span> : Vérifiez si un test de langue est requis.</li>
+      <li><span class="!font-semibold">Coût de la vie</span> : Prenez en compte le logement, la nourriture et les transports.</li>
+      <li><span class="!font-semibold">Facilité administrative</span> : Erasmus+ simplifie les échanges en Europe, hors UE les démarches sont plus complexes.</li>
+    </ul>
+    <p class="mt-2">Pensez aussi à vérifier la <span class="!font-semibold">reconnaissance des diplômes</span> et l’environnement culturel.</p>
+  `,
+    color: '--color-Turquoise',
+  },
+
+  {
+    icon: StagesIcon,
+    title: 'RECHERCHE STAGES',
+    text: 'Trouver une entreprise pour mon stage en Europe',
+    description: `
+    <p>Un stage à l’étranger demande de l’anticipation :</p>
+    <ul class="list-disc ml-5 mt-2">
+      <li><span class="!font-semibold">Cibler les secteurs d’intérêt</span> et repérer les entreprises internationales.</li>
+      <li><span class="!font-semibold">Utiliser les bonnes plateformes</span> : <i>ErasmusIntern, LinkedIn, chambres de commerce françaises</i>.</li>
+      <li><span class="!font-semibold">Activer son réseau</span> : Professeurs, anciens étudiants, relations professionnelles.</li>
+      <li><span class="!font-semibold">Adapter son CV et sa lettre de motivation</span> aux standards du pays.</li>
+    </ul>
+    <p class="mt-2">Pensez à préparer un <span class="!font-semibold">entretien en visio</span> si nécessaire.</p>
+  `,
+    color: '--color-Jaune',
+  },
+
+  {
+    icon: InscriptionIcon,
+    title: 'INSCRIPTION SORTIES',
+    text: 'S’inscrire aux sorties internationales proposées',
+    description: `
+    <p>Votre établissement organise des événements en lien avec la <span class="!font-semibold">mobilité internationale</span> :</p>
+    <ul class="list-disc ml-5 mt-2">
+      <li><span class="!font-semibold">Voyages d’études</span> vers des universités partenaires.</li>
+      <li><span class="!font-semibold">Rencontres</span> avec des étudiants étrangers.</li>
+      <li><span class="!font-semibold">Forums et conférences</span> sur la mobilité.</li>
+    </ul>
+    <p class="mt-2">L’inscription se fait via un <span class="!font-semibold">formulaire en ligne</span> ou auprès du <span class="!font-semibold">service des relations internationales</span>.</p>
+  `,
+    color: '--color-Rouge',
+  },
+
+  {
+    icon: CheckIcon,
+    title: 'POURQUOI L’EUROPE',
+    text: 'Les avantages d’une alternance internationale',
+    description: `
+    <p>Choisir l’Europe pour une <span class="!font-semibold">alternance internationale</span> offre de nombreux avantages :</p>
+    <ul class="list-disc ml-5 mt-2">
+      <li><span class="!font-semibold">Immersion professionnelle</span> dans un environnement international.</li>
+      <li><span class="!font-semibold">Amélioration des compétences linguistiques</span>.</li>
+      <li><span class="!font-semibold">Valorisation du CV</span> auprès des employeurs.</li>
+    </ul>
+    <p class="mt-2">Grâce à <span class="!font-semibold">Erasmus+</span>, la reconnaissance académique et administrative est facilitée.</p>
+  `,
+    color: '--color-Turquoise',
+  },
+]
 </script>
 <template>
   <div class="h-40 bg-gradient-to-b from-(--color-Blanc) to-(--color-Bleueurope)"></div>
@@ -58,45 +169,8 @@ const scrollToTop = () => {
           class="grid grid-cols-2 md:grid-cols-3 gap-3.5 xl:gap-10 mt-10 lg:mt-20 pb-32 xl:pb-56"
         >
           <div
-            v-for="(card, index) in [
-              {
-                icon: SchoolIcon,
-                title: 'CANDIDATER',
-                text: 'Pour partir à l’étranger via le MMi, il faut suivre plusieurs étapes',
-                color: '--color-Jaune',
-              },
-              {
-                icon: EuroIcon,
-                title: 'AIDES FINANCIÈRES',
-                text: 'Il existe plusieurs bourses pour financer votre mobilité',
-                color: '--color-Rouge',
-              },
-              {
-                icon: PlaneIcon,
-                title: 'DESTINATION',
-                text: 'Le choix de la destination dépend de plusieurs critères',
-                color: '--color-Turquoise',
-              },
-              {
-                icon: StagesIcon,
-                title: 'RECHERCHE STAGES',
-                text: 'Trouver une entreprise pour mon stage en Europe',
-                color: '--color-Jaune',
-              },
-              {
-                icon: InscriptionIcon,
-                title: 'INSCRIPTION SORTIES',
-                text: 'S’inscrire aux sorties internationales proposées',
-                color: '--color-Rouge',
-              },
-              {
-                icon: CheckIcon,
-                title: 'POURQUOI L’EUROPE',
-                text: 'Les avantages d’une alternance internationale',
-                color: '--color-Turquoise',
-              },
-            ]"
-            :key="index"
+            v-for="(card, index) in cards"
+            :key="card.title"
             class="text-(--color-Blanc) bg-(--color-Blanc)/30 backdrop-blur-lg rounded-2xl flex flex-col justify-center items-center text-center transition-all duration-500 space-y-2 xl:space-y-3 font-poppins"
             :class="
               activeCard === index
@@ -105,22 +179,35 @@ const scrollToTop = () => {
             "
             v-show="activeCard === null || activeCard === index"
           >
-            <!-- Icône (affichée seulement si la carte n'est pas ouverte) -->
+            <!-- Icône uniquement si la carte est fermée -->
             <component :is="card.icon" v-if="activeCard === null" class="lg:h-20 w-24" />
 
             <h5>{{ card.title }}</h5>
+
             <p class="text-[12px] lg:text-[14px] xl:text-[15px]">
               {{ card.text }}
             </p>
 
-            <!-- Bouton Voir plus / Fermer -->
+            <p
+              v-if="activeCard === index"
+              class="text-[12px] lg:text-[14px] xl:text-[15px] leading-relaxed mt-2"
+              v-html="card.description"
+            ></p>
+
             <button
-              class="text-[12px] font-semibold font-poppins lg:text-[16px] flex items-center gap-3 p-1 px-6 rounded-lg self-center cursor-pointer"
+              class="text-[12px] font-semibold font-poppins lg:text-[16px] flex items-center gap-3 p-1 px-6 rounded-lg self-center cursor-pointer transition-all duration-300"
+              :class="{ 'mt-3': activeCard === index }"
               :style="{ backgroundColor: `var(${card.color})` }"
               @click="activeCard === index ? resetGrid() : expandCard(index)"
             >
-              {{ activeCard === index ? 'Fermer' : 'Voir plus' }}
-              <ArrowIcon v-if="activeCard === null" />
+              <template v-if="activeCard === index">
+                <ArrowIcon class="rotate-180" />
+                Fermer
+              </template>
+              <template v-else>
+                Voir plus
+                <ArrowIcon />
+              </template>
             </button>
           </div>
         </section>

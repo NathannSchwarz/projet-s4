@@ -9,28 +9,29 @@
     ></video>
     <div class="absolute inset-0 flex items-center justify-center">
       <button @click="togglePlayPause" class="text-white focus:outline-none cursor-pointer">
-        <svg v-if="!isPlaying" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M8 5.14v14l11-7-11-7z" />
-        </svg>
-        <svg v-else class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M6 5.14h4v14h-4V5.14zm8 0h4v14h-4V5.14z" />
-        </svg>
+        <svg v-if="!isPlaying" class="w-12 h-12" viewBox="0 0 24 24" fill="transparent" stroke="black" stroke-width="0.5">
+  <path d="M8 5.14v14l11-7-11-7z" />
+</svg>
+<svg v-else class="w-10 h-10" viewBox="0 0 24 24" fill="transparent" stroke="black" stroke-width="0.5">
+  <path d="M6 5.14h4v14h-4V5.14zm8 0h4v14h-4V5.14z" />
+</svg>
       </button>
       <button
         @click="toggleFullScreen"
         class="ml-4 text-white focus:outline-none cursor-pointer hidden lg:flex"
       >
         <svg
-          width="30"
-          height="30"
+          stroke="black"
+          width="35"
+          height="35"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M4 9V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H9M20 15V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H15M15 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V9M9 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V15"
-            stroke="currentcolor"
-            stroke-width="2"
+            stroke="black"
+            stroke-width="1"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
