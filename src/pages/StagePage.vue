@@ -2,6 +2,12 @@
 import VideoPlayer from '@/components/VideoPlayer.vue'
 import VideoIntro from '@/components/VideoAccueil.vue'
 
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  document.title = 'Stage en Europe'
+})
+
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 }

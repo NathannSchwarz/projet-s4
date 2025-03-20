@@ -7,6 +7,12 @@ import VideoIntro from '@/components/VideoAccueil.vue'
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 }
+
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  document.title = 'Explorez l\'Europe'
+})
 </script>
 
 <template>

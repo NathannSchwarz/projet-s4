@@ -16,7 +16,7 @@
         >
           <h3 ref="counter1">0</h3>
           <h6>
-            étudiants et personnels français en mobilité Erasmus+ sont partis étudier dans les pays
+            Étudiants et personnels français en mobilité Erasmus+ sont partis étudier dans les pays
             d’Europe en 2022
           </h6>
         </div>
@@ -48,8 +48,10 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-3 lg:p-10 lg:px-6 col-span-6 lg:col-span-3 lg:rounded-3xl"
         >
-          <h3 ref="counter3">0</h3>
-          <h6>Stages à l’étranger depuis 2014 dans l’IUT NFC</h6>
+          <div class="flex items-center justify-center space-x-2">
+          <h3>+</h3><h3 ref="counter3"> 0 </h3>
+        </div>
+          <h6>Nombre de pays accessibles via les programmes d’échange</h6>
         </div>
         <div
           class="bg-(--color-Rouge) text-(--color-Noir) text-center drop-shadow-lg rounded-xl p-8 px-3 md:px-10 lg:p-10 flex justify-center items-center col-span-6 lg:col-span-3 lg:rounded-3xl lg:hidden"
@@ -65,15 +67,14 @@
         >
           <h3 ref="counter4">0</h3>
           <h6>
-            étudiants et personnels français en mobilité Erasmus+ sont partis étudiés dans les pays
-            d’Europe en 2022
+            Nombre d’accords de partenariat signés entre les IUT français et des établissements d'enseignement supérieur en Europe
           </h6>
         </div>
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-3 md:px-10 lg:p-10 lg:px-6 col-span-6 lg:col-span-3 lg:rounded-3xl"
         >
         <div class="flex items-center justify-center space-x-2">
-          <h3>+</h3> <h3 ref="counter5"> 0 </h3><h3>%</h3>
+          <h3 ref="counter5"> 0 </h3><h3>%</h3>
         </div>
 
           <h6>De français en mobilité à l’étranger depuis 2016</h6>
@@ -90,10 +91,11 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-5 md:px-28 lg:p-10 col-span-12 lg:col-span-6 lg:rounded-3xl"
         >
-          <h3 ref="counter6">0</h3>
+          <div class="flex items-center justify-center space-x-2">
+          <h3 ref="counter6"> 0 </h3><h3>€</h3>
+        </div>
           <h6>
-            étudiants et personnels français en mobilité Erasmus+ sont partis étudiés dans les pays
-            d’Europe en 2022
+            Montant moyen des aides financières disponibles pour une mobilité d’un an (bourses Erasmus+, AMI, Régions)
           </h6>
         </div>
         <div
@@ -153,14 +155,17 @@ onMounted(() => {
 const getTargetValue = (index: number): number => {
   switch (index) {
     case 0:
-    case 3:
-    case 5:
       return 53000;
     case 1:
-    case 2:
       return 378;
+    case 2:
+      return 30;
+    case 3:
+      return 1700;
     case 4:
       return 16;
+    case 5:
+      return 8500;
     default:
       return 0;
   }

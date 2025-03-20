@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import VideoPlayer from '@/components/VideoPlayer.vue'
 import VideoIntro from '@/components/VideoAccueil.vue'
+
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  document.title = 'Sorties Culturelles : OFF et Vitra Design Museum'
+})
 </script>
 
 <template>

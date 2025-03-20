@@ -6,10 +6,17 @@ import Alternance3 from '@/components/icons/Alternance3.vue'
 import Alternance4 from '@/components/icons/Alternance4.vue'
 import Earth from '@/components/icons/Earth.vue'
 import VideoIntro from '@/components/VideoAccueil.vue'
+import { useHead } from '@unhead/vue'
 
 const scrollToTop = () => {
   window.scrollTo(0, 0);
 }
+
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  document.title = 'Alternance en Europe'
+})
 
 import { ref, onMounted, computed } from 'vue'
 
@@ -57,6 +64,8 @@ onMounted(() => {
     isMobile.value = window.innerWidth < 768
   })
 })
+
+
 </script>
 
 <template>

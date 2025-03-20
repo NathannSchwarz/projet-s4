@@ -299,7 +299,7 @@ const cards: Readonly<Card[]> = [
             </ul>
           </div>
 
-          <ul class="flex space-x-8  items-center justify-center align-center">
+          <ul class="flex space-x-8  items-center justify-center align-center xl:justify-start">
             <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet1.png" alt="" /></li>
             <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet7.png" alt="" /></li>
             <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet5.png" alt="" /></li>

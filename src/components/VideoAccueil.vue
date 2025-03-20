@@ -150,7 +150,7 @@ onMounted(async () => {
   marginBottom: '-9rem', // Équivalent à -mb-36 en Tailwind
   duration: 0.1,
   ease: 'none',
-}, 0.1)
+}, 0)
 
     // Apparition des titres (20% du scroll)
     tl.to(
