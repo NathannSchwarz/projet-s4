@@ -92,6 +92,16 @@ updateScreenSize() // Initialiser la valeur au chargement
 const getLeftOffset = (index: number) => {
   return slides.value[index].leftOffset[screenSize.value] || '-40%'
 }
+
+const handleSlideClick = (index: number) => {
+  if (index === (currentIndex.value + 1) % slides.value.length) {
+    nextSlide();
+  } else if (index === (currentIndex.value + 2) % slides.value.length) {
+    currentIndex.value = (currentIndex.value + 2) % slides.value.length;
+  } else {
+    currentIndex.value = index;
+  }
+};
 </script>
 
 <template>
@@ -104,8 +114,9 @@ const getLeftOffset = (index: number) => {
       <div
         v-for="(slide, index) in slides"
         :key="index"
-        class="relative flex-shrink-0 transition-all duration-500 ease-in-out"
-        :class="getSlideClass(index)"
+        class="relative flex-shrink-0 transition-all duration-500 ease-in-out "
+        :class="[getSlideClass(index), index !== currentIndex ? 'cursor-pointer' : '']"
+        @click="handleSlideClick(index)"
       >
         <!-- Contenu principal -->
         <div
