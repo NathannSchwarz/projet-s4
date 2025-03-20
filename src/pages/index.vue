@@ -138,7 +138,7 @@ const scrollToTop = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/IUT.mp4"
+        videoSrc="/video/Vitra.mp4"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px]"
       />
     </div>
