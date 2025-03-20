@@ -331,7 +331,7 @@ const toggleText3 = () => {
       </div>
 
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        <a href="https://www.univ-fcomte.fr/partir-letranger#.YBlCiRbjKUk" target="_blank" 
+        <a href="https://www.univ-fcomte.fr/partir-letranger#.YBlCiRbjKUk" target="_blank"
           >Cette liste n’est pas exhaustive >
           <span
             class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold text-(--color-Rouge)"
@@ -363,7 +363,7 @@ const toggleText3 = () => {
       <div class="space-y-3 lg:col-span-3">
         <h4 class="lg:mb-5">Stage en UX/UI design à Berlin</h4>
         <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
-          Léa LEBEZIER
+          Gaëlle GUILLOU
         </p>
         <p class="text-[13px] md:text-[14px] xl:text-[16px] font-poppins">
           "J’ai toujours voulu travailler dans un environnement international, et mon stage à Berlin
@@ -374,7 +374,7 @@ const toggleText3 = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/IUT.mp4"
+        videoSrc="/video/loic.mp4"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
       />
     </div>
@@ -386,7 +386,7 @@ const toggleText3 = () => {
       <div class="space-y-3 lg:col-span-3 lg:order-2">
         <h4 class="lg:mb-5">Stage en webdesign à Madrid</h4>
         <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
-          Maxime ILUTISUQ
+          Loïc MATTERN
         </p>
         <p class="text-[13px] md:text-[14px] xl:text-[16px] font-poppins">
           "Travailler en alternance dans une agence de communication à Madrid, c’était l’opportunité
@@ -397,7 +397,7 @@ const toggleText3 = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/IUT.mp4"
+        videoSrc="/video/Melissa.mp4"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px]"
       />
     </div>
@@ -409,7 +409,7 @@ const toggleText3 = () => {
       <div class="space-y-3 lg:col-span-3">
         <h4 class="lg:mb-5">Stage en webdesign à Madrid</h4>
         <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
-          Chloé VISIRE
+          Gaëlle GUILLOU
         </p>
         <p class="text-[13px] md:text-[14px] xl:text-[16px] font-poppins">
           "Voir comment des professionnels construisent des expériences visuelles innovantes m’a
@@ -420,7 +420,7 @@ const toggleText3 = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/IUT.mp4"
+        videoSrc="/video/loic.mp4"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
       />
     </div>

@@ -150,7 +150,7 @@ const scrollToTop = () => {
       <div class="space-y-3 lg:col-span-3">
         <h4 class="lg:mb-8">Voyage au OFFF de Barcelone</h4>
         <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
-          Chloé VISIRE
+          Gaëlle GUILLOU
         </p>
         <p class="text-[13px] md:text-[14px] xl:text-[16px] font-poppins">
           "Voir comment des professionnels construisent des expériences visuelles innovantes m’a
@@ -167,7 +167,7 @@ const scrollToTop = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/IUT.mp4"
+        videoSrc="/video/Melissa.mp4"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
       />
     </div>
