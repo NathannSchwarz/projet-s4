@@ -109,7 +109,7 @@ const toggleText3 = () => {
         class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold text-(--color-Rouge)"
       >
         <a
-          href="https://www.google.com/maps/d/u/0/viewer?ll=37.29968222369501%2C43.38691009809611&z=2&mid=1lIgYQZtOdcm15plENMfIdcnb_Lym-GM"
+          href="https://www.google.com/maps/d/u/0/viewer?ll=37.29968222369501%2C43.38691009809611&z=2&mid=1lIgYQZtOdcm15plENMfIdcnb_Lym-GM" target="_blank"
           >> Exemples de destinations</a
         >
       </p>
@@ -331,7 +331,7 @@ const toggleText3 = () => {
       </div>
 
       <p class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins">
-        <a href="https://www.univ-fcomte.fr/partir-letranger#.YBlCiRbjKUk"
+        <a href="https://www.univ-fcomte.fr/partir-letranger#.YBlCiRbjKUk" target="_blank" 
           >Cette liste n’est pas exhaustive >
           <span
             class="text-[14px] md:text-[16px] xl:text-[18px] font-poppins !font-semibold text-(--color-Rouge)"
@@ -361,7 +361,7 @@ const toggleText3 = () => {
     >
       <!-- Conteneur des textes -->
       <div class="space-y-3 lg:col-span-3">
-        <h4 class="lg:mb-8">Stage en UX/UI design à Berlin</h4>
+        <h4 class="lg:mb-5">Stage en UX/UI design à Berlin</h4>
         <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
           Léa LEBEZIER
         </p>
@@ -369,13 +369,7 @@ const toggleText3 = () => {
           "J’ai toujours voulu travailler dans un environnement international, et mon stage à Berlin
           a été une révélation !"
         </p>
-        <button
-          class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
-        >
-          <RouterLink to="/stage-europe" @click="scrollToTop"
-            >Découvrez d’autres expériences !</RouterLink
-          >
-        </button>
+
       </div>
 
       <!-- Vidéo avec box shadow -->
@@ -390,7 +384,7 @@ const toggleText3 = () => {
     >
       <!-- Conteneur des textes -->
       <div class="space-y-3 lg:col-span-3 lg:order-2">
-        <h4 class="lg:mb-8">Stage en webdesign à Madrid</h4>
+        <h4 class="lg:mb-5">Stage en webdesign à Madrid</h4>
         <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
           Maxime ILUTISUQ
         </p>
@@ -398,13 +392,7 @@ const toggleText3 = () => {
           "Travailler en alternance dans une agence de communication à Madrid, c’était l’opportunité
           parfaite pour allier études et expérience internationale !"
         </p>
-        <button
-          class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
-        >
-          <RouterLink to="/stage-europe" @click="scrollToTop"
-            >Découvrez d’autres expériences !</RouterLink
-          >
-        </button>
+
       </div>
 
       <!-- Vidéo avec box shadow -->
@@ -419,7 +407,7 @@ const toggleText3 = () => {
     >
       <!-- Conteneur des textes -->
       <div class="space-y-3 lg:col-span-3">
-        <h4 class="lg:mb-8">Voyage au OFFF de Barcelone</h4>
+        <h4 class="lg:mb-5">Stage en webdesign à Madrid</h4>
         <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
           Chloé VISIRE
         </p>
@@ -427,13 +415,7 @@ const toggleText3 = () => {
           "Voir comment des professionnels construisent des expériences visuelles innovantes m’a
           donné une vraie motivation pour mes propres projets."
         </p>
-        <button
-          class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
-        >
-          <RouterLink to="/sorties-culturelles" @click="scrollToTop"
-            >Découvrez d’autres expériences !</RouterLink
-          >
-        </button>
+
       </div>
 
       <!-- Vidéo avec box shadow -->

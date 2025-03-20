@@ -72,7 +72,10 @@
         <div
           class="bg-(--color-Blanc)/50 text-(--color-Noir) text-center drop-shadow-lg backdrop-blur-xl rounded-xl p-8 px-3 md:px-10 lg:p-10 lg:px-6 col-span-6 lg:col-span-3 lg:rounded-3xl"
         >
-          <h3 ref="counter5">0</h3>
+        <div class="flex items-center justify-center space-x-2">
+          <h3>+</h3> <h3 ref="counter5"> 0 </h3><h3>%</h3>
+        </div>
+
           <h6>De français en mobilité à l’étranger depuis 2016</h6>
         </div>
         <div
@@ -143,6 +146,8 @@ onMounted(() => {
       );
     }
   });
+
+
 });
 
 const getTargetValue = (index: number): number => {

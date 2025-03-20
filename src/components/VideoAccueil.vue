@@ -18,7 +18,7 @@
 
     <!-- Image derrière (z-0) -->
     <img
-      class="absolute top-1/2 left-1/2 mt-6 transform -translate-x-1/2 -translate-y-1/2 xl:h-[85vh] xl:w-5/12 object-cover z-0"
+      class="absolute top-1/2 left-1/2 - transform -translate-x-1/2 -translate-y-1/2 xl:h-[85vh] xl:w-5/12 object-cover z-0"
       src="/img/Stars.webp"
       alt=""
     />
@@ -33,7 +33,7 @@
     </h1>
 
     <!-- Placeholder vidéo (z-10) -->
-    <div ref="videoPlaceholder" class="mx-auto mt-40 w-5/12 h-[45vh] z-10 -mb-36 rounded-2xl"></div>
+    <div ref="videoPlaceholder" class="mx-auto mt-40 w-5/12 h-[45vh] z-10 mb-0 rounded-2xl"></div>
 
     <!-- Sous-titre (z-2) -->
     <h2
@@ -145,6 +145,12 @@ onMounted(async () => {
       y: () => deltaY(),
       ease: 'none',
     })
+
+    tl.to(placeholder, {
+  marginBottom: '-9rem', // Équivalent à -mb-36 en Tailwind
+  duration: 0.1,
+  ease: 'none',
+}, 0.1)
 
     // Apparition des titres (20% du scroll)
     tl.to(

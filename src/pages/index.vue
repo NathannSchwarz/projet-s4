@@ -101,7 +101,7 @@ const scrollToTop = () => {
         <button
           class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
         >
-          <RouterLink to="/stage-europe" @click="scrollToTop"
+          <RouterLink to="/StagePage" @click="scrollToTop"
             >Découvrez d’autres expériences !</RouterLink
           >
         </button>
@@ -130,7 +130,7 @@ const scrollToTop = () => {
         <button
           class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
         >
-          <RouterLink to="/stage-europe" @click="scrollToTop"
+          <RouterLink to="/StagePage" @click="scrollToTop"
             >Découvrez d’autres expériences !</RouterLink
           >
         </button>
@@ -159,7 +159,7 @@ const scrollToTop = () => {
         <button
           class="cursor-pointer bg-(--color-Bleu) w-full md:w-1/2 lg:w-full py-2 lg:py-3 lg:px-5 font-semibold text-[12px] md:text-[13px] xl:text-[14px] font-poppins inset-shadow-md transition-all duration-500 hover:shadow-lg hover:inset-shadow-none hover:bg-(--color-Blanc) hover:text-(--color-Bleu) rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
         >
-          <RouterLink to="/sorties-culturelles" @click="scrollToTop"
+          <RouterLink to="/SortiesPage" @click="scrollToTop"
             >Découvrez d’autres expériences !</RouterLink
           >
         </button>

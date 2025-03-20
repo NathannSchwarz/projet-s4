@@ -220,11 +220,7 @@ const cards: Readonly<Card[]> = [
         <!-- Bloc Informations -->
         <div class="space-y-3 col-span-4 lg:col-span-4">
           <h5>INFORMATIONS</h5>
-          <ul class="flex space-x-8 space-y-5">
-            <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet1.png" alt="" /></li>
-            <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet2.png" alt="" /></li>
-            <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet5.png" alt="" /></li>
-          </ul>
+
           <p class="font-roboto text-sm">
             iUT Nord Franche-Comté <br />
             19 avenue du Maréchal Juin <br />
@@ -271,34 +267,42 @@ const cards: Readonly<Card[]> = [
         </div>
 
         <!-- Bloc Réseaux Sociaux -->
-        <div class="space-y-3 col-span-4 md:col-span-2 lg:col-span-3">
-          <h5>RÉSEAUX SOCIAUX</h5>
-          <ul class="flex space-x-3">
-            <li>
-              <a href="#" target="_blank"
-                ><img class="h-7 lg:h-8" src="/img/social/instagram.png" alt="Instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"
-                ><img class="h-7 lg:h-8" src="/img/social/facebook.png" alt="Facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"
-                ><img class="h-7 lg:h-8" src="/img/social/ytb.png" alt="YouTube"
-              /></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"
-                ><img class="h-7 lg:h-8" src="/img/social/linkedin.png" alt="LinkedIn"
-              /></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"
-                ><img class="h-7 lg:h-8" src="/img/social/tiktok.png" alt="TikTok"
-              /></a>
-            </li>
+        <div class="space-y-3 col-span-4 md:col-span-2 lg:col-span-3 space-y-16 xl:space-y-24">
+          <div class="space-y-3">
+            <h5>RÉSEAUX SOCIAUX</h5>
+            <ul class="flex space-x-3">
+              <li>
+                <a href="#" target="_blank"
+                  ><img class="h-7 lg:h-8" src="/img/social/instagram.png" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img class="h-7 lg:h-8" src="/img/social/facebook.png" alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img class="h-7 lg:h-8" src="/img/social/ytb.png" alt="YouTube"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img class="h-7 lg:h-8" src="/img/social/linkedin.png" alt="LinkedIn"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img class="h-7 lg:h-8" src="/img/social/tiktok.png" alt="TikTok"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="flex space-x-8  items-center justify-center align-center">
+            <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet1.png" alt="" /></li>
+            <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet7.png" alt="" /></li>
+            <li><img class="h-8 lg:h-10" src="/img/logo/logoprojet5.png" alt="" /></li>
           </ul>
         </div>
       </section>

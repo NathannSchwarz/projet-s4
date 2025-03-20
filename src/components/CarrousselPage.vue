@@ -4,10 +4,10 @@ import ArrowIcon2 from '@/components/icons/ArrowIcon2.vue'
 
 import stageImage from '/img/Carroussel2.webp'
 import alternanceImage from '/img/Carroussel3.webp'
-import cultureImage from '/img/Carroussel1.webp'
+import cultureImage from '/img/OFF/OFF1.webp'
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo(0, 0);
 };
 
 // Définir un type pour les tailles d'écran
@@ -124,7 +124,7 @@ const getLeftOffset = (index: number) => {
           </div>
 
           <!-- Contenu texte pour l'élément actif -->
-          <div v-if="currentIndex === index" class="absolute bottom-5 left-5 p-5 md:p-8 xl:p-24">
+          <div v-if="currentIndex === index" class="absolute bottom-5 left-5 p-5 md:p-8 xl:p-24" @click="scrollToTop">
             <h3 class="font-bold text-black">{{ slide.title }}</h3>
             <p class="mt-2 text-black text-[14px] md:text-[16px] xl:text-[18px]">
               {{ slide.description }}

@@ -28,14 +28,13 @@ const scrollToTop = () => {
 
 <template>
   <header
-    class="fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-5 w-11/12 md:w-10/12 mx-auto bg-(--color-Jaune) flex items-center justify-between lg:justify-around p-4 font-roboto"
+    class="fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-5 w-11/12 md:w-10/12 mx-auto bg-(--color-Jaune) flex items-center justify-between lg:justify-around p-4 font-roboto shadow-xl"
     :class="{ 'rounded-xl md:rounded-2xl': !isMenuOpen, 'rounded-t-xl lg:rounded-2xl': isMenuOpen }"
   >
     <!-- Zone gauche : Logos -->
     <div class="flex items-center gap-2" @click="scrollToTop">
-      <router-link to="/" class="flex items-center space-x-4" @click="closeMenu('/')">
+      <router-link to="/" class="flex items-center space-x-4 cursor-pointer" @click="closeMenu('/')">
         <img src="/img/logo/logoprojet1.png" alt="Logo Projet 1" class="h-8 lg:h-10" />
-        <img src="/img/logo/logoprojet2.png" alt="Logo Projet 2" class="h-8 lg:h-10" />
       </router-link>
     </div>
 
@@ -70,7 +69,7 @@ const scrollToTop = () => {
 
     <!-- Zone droite : Logo + Menu Mobile -->
     <div class="flex items-center gap-4">
-      <img src="/img/logo/logoprojet4.png" alt="Logo Projet 4" class="h-8 lg:h-10" />
+      <img src="/img/logo/logoprojet7.png" alt="Logo Projet 4" class="h-8 lg:h-11 cursor-pointer" @click="closeMenu('/')"/>
 
       <!-- Icône de menu Mobile -->
       <button

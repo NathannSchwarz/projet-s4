@@ -7,7 +7,7 @@ import VideoIntro from '@/components/VideoAccueil.vue'
   <VideoIntro
     title="SORTIES"
     subtitle="CULTURELLES"
-    videoSrc="/video/IUT.mp4"
+    videoSrc="/video/OFFVITRA.mp4"
     class="hidden xl:block"
   />
 
@@ -32,7 +32,7 @@ import VideoIntro from '@/components/VideoAccueil.vue'
     >
       <video
         class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl nonevideo no-controls"
-        src="/video/IUT.mp4"
+        src="/video/OFFVITRA.mp4"
         autoplay
         loop
         muted
