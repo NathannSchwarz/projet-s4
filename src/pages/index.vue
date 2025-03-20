@@ -92,7 +92,7 @@ const scrollToTop = () => {
       <div class="space-y-3 lg:col-span-3">
         <h4 class="lg:mb-8">Stage en UX/UI design à Berlin</h4>
         <p class="text-[16px] md:text-[18px] xl:text-[20px] font-poppins !font-semibold">
-          Léa LEBEZIER
+          Gaëlle GUILLOU
         </p>
         <p class="text-[13px] md:text-[14px] xl:text-[16px] font-poppins">
           "J’ai toujours voulu travailler dans un environnement international, et mon stage à Berlin
@@ -109,7 +109,7 @@ const scrollToTop = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/IUT.mp4"
+        videoSrc="/video/Melissa.mp4"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
       />
     </div>
