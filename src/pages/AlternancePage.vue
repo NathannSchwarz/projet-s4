@@ -73,7 +73,7 @@ onMounted(() => {
    <VideoIntro
     title="ALTERNANCE"
     subtitle="EN EUROPE"
-    videoSrc="/video/IUT.mp4"
+    videoSrc="/video/ALTERNANCE.mp4"
     class="hidden xl:block"
   />
   <section class="block xl:hidden relative overflow-hidden py-30 xl:py-28 flex flex-col items-center mx-auto">
@@ -95,7 +95,7 @@ onMounted(() => {
     >
       <video
         class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl nonevideo no-controls"
-        src="/video/IUT.mp4"
+        src="/video/ALTERNANCE.mp4"
         autoplay
         loop
         muted

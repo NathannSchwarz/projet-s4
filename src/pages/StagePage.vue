@@ -38,7 +38,7 @@ const toggleText3 = () => {
   <VideoIntro
     title="STAGE"
     subtitle="EN EUROPE"
-    videoSrc="/video/IUT.mp4"
+    videoSrc="/video/STAGE.mp4"
     class="hidden xl:block"
   />
   <section
@@ -62,7 +62,7 @@ const toggleText3 = () => {
     >
       <video
         class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl nonevideo no-controls"
-        src="/video/IUT.mp4"
+        src="/video/STAGE.mp4"
         autoplay
         loop
         muted
