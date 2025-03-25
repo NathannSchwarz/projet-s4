@@ -258,10 +258,7 @@ const cards: Readonly<Card[]> = [
               >
             </li>
             <li class="hover:font-semibold transition-all duration-300">
-              <router-link to="#">Mentions légales</router-link>
-            </li>
-            <li class="hover:font-semibold transition-all duration-300">
-              <router-link to="#">Politiques de cookies (EU)</router-link>
+              <router-link to="/MentionLegale">Mentions légales</router-link>
             </li>
           </ul>
         </div>
@@ -272,27 +269,27 @@ const cards: Readonly<Card[]> = [
             <h5>RÉSEAUX SOCIAUX</h5>
             <ul class="flex space-x-3">
               <li>
-                <a href="#" target="_blank"
+                <a href="https://www.instagram.com/iutnfc/" target="_blank"
                   ><img class="h-7 lg:h-8" src="/img/social/instagram.png" alt="Instagram"
                 /></a>
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="https://www.facebook.com/iutnfc/?locale=fr_FR" target="_blank"
                   ><img class="h-7 lg:h-8" src="/img/social/facebook.png" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="https://www.youtube.com/channel/UCOipQ939Yy0Ja5GVI4l-lvA" target="_blank"
                   ><img class="h-7 lg:h-8" src="/img/social/ytb.png" alt="YouTube"
                 /></a>
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="https://www.linkedin.com/school/iut-nord-franche-comte/posts/?feedView=all" target="_blank"
                   ><img class="h-7 lg:h-8" src="/img/social/linkedin.png" alt="LinkedIn"
                 /></a>
               </li>
               <li>
-                <a href="#" target="_blank"
+                <a href="https://www.tiktok.com/place/IUT-Nord-Franche-Comt%C3%A9-21568226271293119" target="_blank"
                   ><img class="h-7 lg:h-8" src="/img/social/tiktok.png" alt="TikTok"
                 /></a>
               </li>
