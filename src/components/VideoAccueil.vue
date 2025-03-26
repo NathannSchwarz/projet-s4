@@ -64,7 +64,7 @@ const props = defineProps({
   },
   videoSrc: {
     type: String,
-    default: '/video/Accueil.webm',
+    default: '/video/Accueil.mp4',
   },
 })
 

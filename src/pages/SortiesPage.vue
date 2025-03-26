@@ -13,7 +13,7 @@ onMounted(() => {
   <VideoIntro
     title="SORTIES"
     subtitle="CULTURELLES"
-    videoSrc="/video/OFFVITRA.webm"
+    videoSrc="/video/OFFVITRA.mp4"
     class="hidden xl:block"
   />
 
@@ -38,7 +38,7 @@ onMounted(() => {
     >
       <video
         class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl nonevideo no-controls"
-        src="/video/OFFVITRA.webm"
+        src="/video/OFFVITRA.mp4"
         autoplay
         loop
         muted
@@ -137,7 +137,7 @@ onMounted(() => {
     </div>
 
     <VideoPlayer
-      videoSrc="/video/Off.webm"
+      videoSrc="/video/Off.mp4"
       videoClasses="rounded-xl lg:rounded-2xl mb-12 lg:mb-20"
     />
 
@@ -215,7 +215,7 @@ onMounted(() => {
     </div>
 
     <VideoPlayer
-      videoSrc="/video/Vitra.webm"
+      videoSrc="/video/Vitra.mp4"
       videoClasses="rounded-xl lg:rounded-2xl mb-12 lg:mb-20"
     />
 
