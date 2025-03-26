@@ -38,7 +38,7 @@ const toggleText3 = () => {
   <VideoIntro
     title="STAGE"
     subtitle="EN EUROPE"
-    videoSrc="/video/STAGE.mp4"
+    videoSrc="/video/STAGE.webm"
     class="hidden xl:block"
   />
   <section
@@ -62,7 +62,7 @@ const toggleText3 = () => {
     >
       <video
         class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-cover rounded-xl xl:rounded-3xl nonevideo no-controls"
-        src="/video/STAGE.mp4"
+        src="/video/STAGE.webm"
         autoplay
         loop
         muted
@@ -380,7 +380,7 @@ const toggleText3 = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/loic.mp4"
+        videoSrc="/video/loic.webm"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
       />
     </div>
@@ -403,7 +403,7 @@ const toggleText3 = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/Melissa.mp4"
+        videoSrc="/video/Melissa.webm"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[80px] lg:rounded-tr-[20px] lg:rounded-bl-[20px] lg:rounded-br-[80px]"
       />
     </div>
@@ -426,7 +426,7 @@ const toggleText3 = () => {
 
       <!-- Vidéo avec box shadow -->
       <VideoPlayer
-        videoSrc="/video/loic.mp4"
+        videoSrc="/video/loic.webm"
         videoClasses="rounded-tl-[10px] rounded-tr-[70px] rounded-bl-[70px] rounded-br-[10px] lg:rounded-tl-[20px] lg:rounded-tr-[80px] lg:rounded-bl-[80px] lg:rounded-br-[20px]"
       />
     </div>
